@@ -1,0 +1,218 @@
+@media (prefers-reduced-motion: no-preference) {
+
+    * {
+        scroll-behavior: smooth;
+    }
+
+    /*! "no-preference" permit "scroll-behavior: smooth;" (animation / smoot transition when scrolling the age), while "reduce" will not allow it, so when clicking on the links the page will jump instantly to the section referenced. */
+}
+
+body {
+    /*! the contrast between the body text and the background should be at least 4.5:1 for AA rating and at least 7:1 for AAA rating. In the case of Large scale text (120-150% larger than the body text) these can be 3:1 and respectively 4.5:1. Check the contrast with the Dev Tools, by selecting an element and go to Styles and click on the color square and see the contrast in the opened window. */
+    background: #f5f6f7;
+    color: #1b1b32;
+    font-family: Helvetica;
+    margin: 0;
+}
+
+body > header {
+    width: 100%;
+    height: 50px;
+    background-color: #1b1b32;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    /*! this fix the <header> to the top of the layout viewport (when zoom-in and vertical scrolling bar appears), making it a sticky header. */
+    /*! because of "position: fixed;" the <h2>Student Info</h2> will move under the <header> section and will not be visible anymore >>> to fix that, */
+}
+
+body > main {
+    padding-top: 50px;
+    /*! this will fix the <h2>Student Info</h2> moving under the <header> due to the "position: fixed;" declaration described in the comment above. */
+}
+
+body > footer {
+    background-color: #2a2a40;
+
+    display: flex;
+    justify-content: center;
+    /*! puteam folosi si "text-align: center;" in loc de flexbox pentru a centra textul din <footer> */
+
+    /*  position: fixed;
+    bottom: 0;
+    /*! this fix the <footer> to the bottom of the layout viewport (when zoom-in and vertical scrolling bar appears), making it a sticky footer. */
+}
+
+footer,
+footer a {
+    color: #dfdfe2;
+}
+
+footer > address {
+    text-align: center;
+    padding: 0.3em;
+}
+
+section {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto 10px auto;
+}
+
+#logo {
+    width: max(100px, 18vw);
+    /*! the max() CSS function can be used anywhere a length/frequency/angle/time/%/number is allowed, just like the min() or calc() functions. */
+    background-color: #0a0a23;
+    aspect-ratio: 35 / 4;
+    /*! Experimental! Expressed as width / height or the resulting number */
+    padding: 0.4rem;
+}
+
+h1,
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*! Typeface plays an important role in the accessibility of a page. Some fonts are easier to read than others, and this is especially true on low-resolution screens. */
+}
+
+h1 {
+    text-align: center;
+    color: #f1be32;
+    font-size: min(5vw, 1.2em);
+    /*! the min() CSS function, that works similar to the max() CSS function. */
+}
+
+h2 {
+    border-bottom: 4px solid #dfdfe2;
+    margin-top: 0;
+    padding-top: 60px;
+}
+
+.formrow {
+    margin-top: 30px;
+    padding: 0 15px;
+}
+
+.question-block {
+    text-align: left;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 5px;
+}
+
+.question {
+    border: none;
+    padding-bottom: 0;
+}
+
+.info input,
+.info label {
+    text-align: right;
+    /*  display: inline-block; >>> it's not utile here! I don't know why they used it in the course. */
+
+}
+
+.info {
+    padding: 10px 0 0 5px;
+}
+
+input {
+    font-size: 16px;
+}
+
+.info input {
+    width: 50%;
+    text-align: left;
+}
+
+.info label {
+    width: 10%;
+    min-width: 55px;
+    display: inline-block;
+    /*! by using "display: inline-block", the <label> elements become blocks and thus will respect the declared width of 10% >>> thus the <input> fields will get aligned! */
+}
+
+nav {
+    width: 50%;
+    max-width: 300px;
+    height: 50px;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    /*! this makes the nav>ul wrap in order to not overflow the right side of small screens */
+
+    padding-inline-start: 0;
+    height: 100%;
+    margin-block: 0;
+    /*! "padding-inline-start" and "margin-block" */
+}
+
+nav > ul > li {
+    color: #dfdfe2;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    display: block;
+    /*! "display: block;" makes the dots of the <li> elements to dissapear, exactly as in the case of the "list-style: none;" declaration. */
+}
+
+nav > ul > li:hover {
+    background-color: #dfdfe2;
+    color: #1b1b32;
+    cursor: pointer;
+    /*! above, the "background-color" and "color" are switched between them (nice practice!) and the mouse cursor becomes a little hand */
+}
+
+li > a {
+    color: inherit;
+    /*! color inherited from parent */
+    text-decoration: none;
+    /*! with "text-decoration: none;" we eliminate the underline of the <a> element */
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    /*! the pattern above will visually hide the .sr-only text, so that only a screen reader could read. */
+}
+
+p {
+    margin-top: 5px;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+p::before {
+    content: "Question #";
+    /*! this adds "Question #" before the <p> elements. */
+}
+
+.answers-list {
+    list-style: none;
+    padding: 0;
+}
+
+button[type="submit"] {
+    display: block;
+    /*! without "display: block;" you cannot center an element by applying "margin: auto;" because the element won't take that into account. On the other hand, all the properties below can be applied without being necessary to have "display: block;". */
+    margin: 40px auto;
+    width: 40%;
+    padding: 15px;
+    font-size: 23px;
+    background: #d0d0d5;
+    border: 3px solid #3b3b4f;
+    border-radius: 20px;
+}

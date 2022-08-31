@@ -1,0 +1,958 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://www.quirksmode.org/blog/archives/2021/06/inherit_initial.html
+Subject: Inherit, initial, unset, revert - QuirksBlog
+Date: Thu, 18 Aug 2022 19:21:48 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--i03s48tkl3Z8w3NywNjE8njWszlBF70KKX6JaXjZ0a----"
+
+
+------MultipartBoundary--i03s48tkl3Z8w3NywNjE8njWszlBF70KKX6JaXjZ0a----
+Content-Type: text/html
+Content-ID: <frame-729F4EFAA99B681B614A9B0E414F4DA1@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.quirksmode.org/blog/archives/2021/06/inherit_initial.html
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+
+<title>Inherit, initial, unset, revert - QuirksBlog</title>
+
+<meta name=3D"monetization" content=3D"$ilp.gatehub.net/591198132">
+<meta name=3D"twitter:card" content=3D"summary">
+<meta name=3D"twitter:title" content=3D"Inherit, initial, unset, revert =E2=
+=80=94 ppk">
+<meta name=3D"twitter:url" content=3D"http://www.quirksmode.org/blog/archiv=
+es/2021/06/inherit_initial.html">
+<meta name=3D"twitter:image" content=3D"https://quirksmode.org/pix/logo_qui=
+rksmode_twitter.png">
+<link rel=3D"stylesheet" href=3D"https://www.quirksmode.org/quirksmode-new.=
+css" type=3D"text/css">
+<link rel=3D"alternate" type=3D"application/atom+xml" title=3D"Atom" href=
+=3D"http://www.quirksmode.org/blog/atom.xml">
+<link rel=3D"alternate" type=3D"application/rss+xml" title=3D"RSS 1.0" href=
+=3D"http://www.quirksmode.org/blog/index.rdf">
+<link rel=3D"alternate" type=3D"application/rss+xml" title=3D"RSS 2.0" href=
+=3D"http://www.quirksmode.org/blog/index.xml">
+<link rel=3D"alternate" type=3D"application/rsd+xml" title=3D"RSD" href=3D"=
+http://www.quirksmode.org/blog/rsd.xml">
+
+<meta name=3D"viewport" content=3D"width=3Ddevice-width,initial-scale=3D1">
+
+</head>
+
+<body class=3D"blog">
+
+
+
+
+<div class=3D"pageHeader">
+<div class=3D"specialMessage">
+	<a href=3D"https://www.quirksmode.org/css-coaching.html">Improve your CSS?=
+ Hire me as your coach.</a>
+</div>
+
+<div class=3D"mainNav">
+	<a href=3D"https://www.quirksmode.org/js/contents.html">JavaScript archive=
+s</a>
+	<a href=3D"https://www.quirksmode.org/compatibility.html">Compatibility</a=
+>
+	<a href=3D"https://www.quirksmode.org/css-coaching.html">CSS coaching</a>
+	<a href=3D"https://www.quirksmode.org/blog/">QuirksBlog</a>
+	<a href=3D"https://www.quirksmode.org/donations.html">Donations</a>
+	<a href=3D"https://www.quirksmode.org/politics/">Politics</a>
+	<a href=3D"https://www.quirksmode.org/mobile/">Mobile</a>
+	<a href=3D"https://www.quirksmode.org/about/">About</a>
+	<a href=3D"https://www.quirksmode.org/coh/" title=3D"Conference Organiser'=
+s Handbook">COH</a>
+	<!-- a href=3D"/mobilewebhandbook/">Mobile Web<br>Handbook</a -->
+</div>
+
+<a class=3D"logoQuirksmode" href=3D"https://www.quirksmode.org/" title=3D"H=
+ome"><img src=3D"https://www.quirksmode.org/pix/logo_quirksmode.gif" alt=3D=
+"QuirksMode"></a>
+
+<div class=3D"extraInfo">
+	<img class=3D"logoPPK" src=3D"https://www.quirksmode.org/pix/logo_ppk.gif"=
+ alt=3D"PPK">
+	<a href=3D"https://www.quirksmode.org/sitemap.html">sitemap</a><a href=3D"=
+https://www.quirksmode.org/contact.html" class=3D"rightExtraLink">contact</=
+a>
+	<form action=3D"http://www.google.com/search" method=3D"get" title=3D"Uses=
+ Google" id=3D"mainSearch">
+		<input name=3D"q" id=3D"searchTop" value=3D"Search QuirksMode.org">
+		<input type=3D"submit" id=3D"searchSubmit" value=3D"Search">
+	</form>
+</div>
+
+</div>
+
+<div class=3D"floater">
+
+<ul>
+	<li>Written on  2 June 2021</li>
+	<li>Categorized in <a href=3D"http://www.quirksmode.org/blog/archives/css_=
+for_javascripters/index.html">CSS for JavaScripters</a></li>
+	<li>Previous entry: <a href=3D"http://www.quirksmode.org/blog/archives/202=
+1/05/aspectratio.html">aspect-ratio</a></li>
+
+	<li>Next entry: <a href=3D"http://www.quirksmode.org/blog/archives/2021/06=
+/lets_talk_about.html">Let=E2=80=99s talk about money</a></li>
+
+</ul>
+
+<p>This is the blog of <a href=3D"https://www.quirksmode.org/about/">Peter-=
+Paul Koch</a>, web developer, consultant, and trainer.
+You can also follow
+him on <a href=3D"http://twitter.com/ppk" class=3D"external">Twitter</a> or=
+ <a href=3D"https://mastodon.social/@ppk" class=3D"external">Mastodon</a>.<=
+br>
+<a href=3D"http://www.quirksmode.org/blog/atom.xml">Atom</a>
+<a href=3D"http://www.quirksmode.org/blog/index.xml">RSS</a>
+</p>
+
+<p>If you like this blog, why not <a href=3D"https://www.quirksmode.org/don=
+ations.html">donate a little bit of money</a> to help me pay my bills?</p>
+
+
+<p>Categories:</p>
+
+<ul>
+=09
+=09
+=09
+		<li><a href=3D"http://www.quirksmode.org/blog/archives/archives/index.htm=
+l" title=3D"">Archives</a>  <span class=3D"smaller">(1)</span>
+	</li>
+=09
+=09
+=09
+=09
+=09
+		<li><a href=3D"http://www.quirksmode.org/blog/archives/browsers/index.htm=
+l" title=3D"Browser news">Browsers</a>  <span class=3D"smaller">(9)</span>
+	</li>
+=09
+=09
+=09
+		<li><a href=3D"http://www.quirksmode.org/blog/archives/coding_techniques/=
+index.html" title=3D"Notes about HTML, CSS or JavaScript coding techniques"=
+>Coding techniques</a>  <span class=3D"smaller">(27)</span>
+	</li>
+=09
+		<li><a href=3D"http://www.quirksmode.org/blog/archives/conferences/index.=
+html" title=3D"Conferences I attended">Conferences</a>  <span class=3D"smal=
+ler">(108)</span>
+	</li>
+=09
+=09
+=09
+=09
+=09
+		<li><a href=3D"http://www.quirksmode.org/blog/archives/css_for_javascript=
+ers/index.html" title=3D"">CSS for JavaScripters</a>  <span class=3D"smalle=
+r">(17)</span>
+	</li>
+=09
+=09
+=09
+=09
+=09
+=09
+=09
+=09
+=09
+=09
+=09
+=09
+=09
+		<li><a href=3D"http://www.quirksmode.org/blog/archives/linkbait/index.htm=
+l" title=3D"What's going on elsewhere">Linkbait</a>  <span class=3D"smaller=
+">(49)</span>
+	</li>
+=09
+=09
+=09
+=09
+=09
+=09
+=09
+=09
+=09
+=09
+		<li><a href=3D"http://www.quirksmode.org/blog/archives/monetisation/index=
+.html" title=3D"">Monetisation</a>  <span class=3D"smaller">(8)</span>
+	</li>
+=09
+=09
+=09
+=09
+		<li><a href=3D"http://www.quirksmode.org/blog/archives/notes_on_the_web/i=
+ndex.html" title=3D"">Notes on the web</a>  <span class=3D"smaller">(2)</sp=
+an>
+	</li>
+=09
+=09
+=09
+=09
+		<li><a href=3D"http://www.quirksmode.org/blog/archives/personal/index.htm=
+l" title=3D"About my life">Personal</a>  <span class=3D"smaller">(31)</span=
+>
+	</li>
+=09
+=09
+=09
+=09
+=09
+=09
+=09
+=09
+=09
+=09
+=09
+=09
+=09
+		<li><a href=3D"http://www.quirksmode.org/blog/archives/thidrekssaga/index=
+.html" title=3D"">Thidrekssaga</a>  <span class=3D"smaller">(14)</span>
+	</li>
+=09
+=09
+=09
+=09
+=09
+=09
+=09
+=09
+=09
+		<li><a href=3D"http://www.quirksmode.org/blog/archives/web_thinking/index=
+.html" title=3D"My thinking about the web">Web thinking</a>  <span class=3D=
+"smaller">(15)</span>
+	</li>
+=09
+=09
+=09
+
+</ul>
+
+
+
+
+</div><h2>Inherit, initial, unset, revert</h2>
+
+<p>Today we=E2=80=99re going to take a quick look at a few special CSS keyw=
+ords you can use on any CSS property: <code>inherit</code>, <code>initial</=
+code>, <code>revert</code>, and <code>unset</code>. Also, we will ask where=
+ and when to use them to the greatest effect, and if we need more of those =
+keywords.</p>
+
+<p>The first three were defined in the <a href=3D"https://www.w3.org/TR/css=
+-cascade-3/" class=3D"external">Cascading Level 3</a> spec, while <code>rev=
+ert</code> was added in <a href=3D"https://drafts.csswg.org/css-cascade/" c=
+lass=3D"external">Cascading Level 4</a>. Despite 4 still being in draft <co=
+de>revert</code> is already supported.
+See also
+<a href=3D"https://developer.mozilla.org/en-US/docs/Web/CSS/revert" class=
+=3D"external">the MDN revert page</a>,
+<a href=3D"https://css-tricks.com/what-does-revert-do-in-css/" class=3D"ext=
+ernal">Chris Coyier=E2=80=99s page</a>,
+and my <a href=3D"https://www.quirksmode.org/css/cascading/values.html">tes=
+t page</a>
+</p>
+
+
+<a name=3D"more"></a>
+
+
+<p class=3D"coaching">[ Would you like to improve your CSS? You can hire me=
+ as a
+<a href=3D"https://www.quirksmode.org/css-coaching.html">CSS coach</a>. ]</=
+p>
+
+<h3>inherit</h3>
+
+<p>The <code>inherit</code> keyword explicitly tells an element that it inh=
+erits the value for this declaration from its parent. Let=E2=80=99s take th=
+is example:</p>
+
+<pre style=3D"margin-right: -680px;">.my-div {
+	margin: inherit;
+}
+
+.my-div a {
+	color: inherit;
+}
+</pre>
+
+<p>The second declaration is easiest to explain, and sometimes actually use=
+ful. It says that the link colour in the div should be the same as the text=
+ colour. The div has a text colour. It=E2=80=99s not specified here, but be=
+cause <code>color</code> is inherited by default the div gets the text colo=
+r of its parent. Let=E2=80=99s say it=E2=80=99s black.</p>
+
+<p>Links usually have a different colour. As a CSS programmer you frequentl=
+y set it, and even if you don=E2=80=99t browsers automatically make it blue=
+ for you. Here, however, we explicitly tell the browsers that the link colo=
+ur should be inherited from its parent, the div. In our example links becom=
+e black.</p>
+
+<p class=3D"smaller">(Is this a good idea? Occasionally. But if you remove =
+the colour difference between links and main text, make sure your links are=
+ underlined. Your users will thank you.)</p>
+
+<p>Now let=E2=80=99s look at the <code>margin: inherit</code>. Normally mar=
+gins don=E2=80=99t inherit, and for good reason. The fact that an element h=
+as <code>margin-left: 10%</code> does not mean all of its descendents shoul=
+d also get that margin. In fact, you most likely don=E2=80=99t want that. M=
+argins are set on a per-case basis.</p>
+
+<p>This declaration tells the div to use the margin specified on its parent=
+, however. This is an odd thing to specify, and I never saw a practical use=
+ case in the wild. Still CSS, being ridiculously powerful, allows it.</p>
+
+<p>In any case, that=E2=80=99s how the <code>inherit</code> keyword works. =
+Using it for font sizes or colours may occasionally be a good idea. In othe=
+r contexts - rarely.</p>
+
+<p>And keep the difference between inheriting and non-inheriting properties=
+ in mind. It=E2=80=99s going to be important later on.</p>
+
+<h3>initial</h3>
+
+<p>The <code>initial</code> keywords sets the property back to its initial =
+value. This is the value specified in the W3C specification for that proper=
+ty.</p>
+
+<p>Initial values from the spec are a bit of a mixed bag. Some make sense, =
+others don=E2=80=99t, really. <code>float: none</code> and <code>background=
+-color: transparent</code> are examples of the first category. Of course an=
+ element does not have a background colour without you specifying one, nor =
+does it float automatically.</p>
+
+<p>Others are historically determined, such as <code>background-repeat: rep=
+eat</code>. Back in the Stone Age before CSS all background images repeated=
+, and the CSS1 specification naturally copied this behaviour.</p>
+
+<p>Still others are essentially arbitrary, such as <code>display: inline</c=
+ode>. Why did W3C opt for inline instead of block? I don=E2=80=99t know, an=
+d it doesn=E2=80=99t really matter any more. They had to decide on an initi=
+al value, and while inline is somewhat strange, block would be equally stra=
+nge.</p>
+
+<p>In any case, the <code>initial</code> keyword makes the property revert =
+to this initial value from the specification, whether that makes sense or n=
+ot.</p>
+
+<h3>unset</h3>
+
+<p>When we get to the <code>unset</code> value the distinction between inhe=
+riting and non-inheriting  properties becomes important. <code>unset</code>=
+ has a different effect on them.</p>
+
+<ul>
+	<li>If a property is normally inherited, <code>unset</code> means <code>in=
+herit</code>.</li>
+	<li>If a property is normally not inherited, <code>unset</code> means <cod=
+e>initial</code>.</li>
+</ul>
+
+<h3>revert</h3>
+
+<p><code>revert</code>, the newest of these keywords, also distinguishes be=
+tween inheriting and non-inheriting properties.</p>
+
+<ul>
+	<li>If a property is normally inherited, <code>revert</code> means <code>i=
+nherit</code>.</li>
+	<li>If a property is normally not inherited, <code>revert</code> reverts t=
+o the value specified in the browser style sheet.</li>
+</ul>
+
+<h3>all</h3>
+
+<p>Finally, we should treat <code>all</code>. It is not a value but a prope=
+rty, or rather, the collection of all CSS properties on an element. It only=
+ takes one of the keywords we discussed, and allows you to apply that keywo=
+rd to all CSS properties. For instance:</p>
+
+<pre style=3D"margin-right: -680px;">.my-div {
+	all: initial;
+}
+</pre>
+
+<p>Now all CSS properties on the div are set to <code>initial</code>.</p>
+
+<h3>Examples</h3>
+
+<p>The reaction of my <a href=3D"https://www.quirksmode.org/css/cascading/v=
+alues.html">test page</a> to setting the <code>display</code> of all elemen=
+ts to the four keywords is instructive. My test script sets the following s=
+tyle:</p>
+
+<pre style=3D"margin-right: -680px;">body * {
+	display: [inherit | initial | unset | revert] !important;
+}
+</pre>
+
+<p>The elements react as follows:</p>
+
+<ul>
+	<li><code>display: inherit</code>: all elements now inherit their display =
+value from the body. Since the body has <code>display: block</code> all ele=
+ments get that value, whether that makes sense or not.</li>
+	<li><code>display: initial</code>: the initial value of display is <code>i=
+nline</code>. Therefore all elements get that value, whether that makes sen=
+se or not.</li>
+	<li><code>display: unset</code>: display does not inherit. Therefore this =
+behaves as <code>initial</code> and all elements get <code>display: inline<=
+/code>.</li>
+	<li><code>display: revert</code>: display does not inherit. Therefore the =
+defaults of the browser style sheet are restored, and each element gets its=
+ proper display =E2=80=94 except for the <code>dl</code>, which I had given=
+ a <code>display: grid</code>. This value is now supplanted by the browser-=
+provided <code>block</code>.</li>
+</ul>
+
+<p>Unfortunately the same test page also contains a riddle I don=E2=80=99t =
+understand the behaviour of <code>&lt;button&gt;</code>s when I set <code>c=
+olor</code> to the four keywords:</p>
+
+<ul>
+	<li><code>color: inherit</code>: all elements, including <code>&lt;button&=
+gt;</code>s, now inherit their colour from the body, which is <code>blue</c=
+ode>. So all text becomes blue.</li>
+	<li><code>color: initial</code>: since the initial value of <code>color</c=
+ode> is black, all elements, including <code>&lt;button&gt;</code>s, become=
+ black.</li>
+	<li><code>color: unset</code>: color inherits. Therefore this behaves as <=
+code>inherit</code> and all elements, including <code>&lt;button&gt;</code>=
+s, become blue.</li>
+	<li><code>color: revert</code>: This is the weird one. All elements become=
+ blue, except for <code>&lt;button&gt;</code>s, which become black. I don=
+=E2=80=99t understand why. Since colors inherit, I expected <code>revert</c=
+ode> to work as <code>inherit</code> and the buttons to also become blue. B=
+ut apparently the browser style sheet of <code>button {color: black}</code>=
+ (more complicated in practice) is given precedence. Yes, <code>revert</cod=
+e> should remove author styles (the ones we write), and that would cause th=
+e black from the browser style sheet to be applied, but only if a property =
+does not inherit =E2=80=94 and color does. I don=E2=80=99t know why the bro=
+wser style sheet is given precedence in this case. So I=E2=80=99m going to =
+cop out and say form elements are weird.</li>
+</ul>
+
+<h3>Practical use: almost none</h3>
+
+<p>The purpose of both <code>unset</code> and <code>revert</code> is to wip=
+e the slate clean and return to the initial and the browser styles, respect=
+ively =E2=80=94 except when the property inherits; in that case, inheritanc=
+e is still respected. <code>initial</code>, meanwhile, wipes the slate even=
+ cleaner by also reverting inheriting properties to their initial values.</=
+p>
+
+<p>This would be useful when you create components that should not be influ=
+enced by styles defined elsewhere on the page. Wipe the slate clean, start =
+styling from zero. That would help modularisation.</p>
+
+<p>But that=E2=80=99s not how these keywords work. We don=E2=80=99t want to=
+ revert to the initial styles (which are sometimes plain weird) but to the =
+browser style sheet. <code>unset</code> comes closest, but it doesn=E2=80=
+=99t touch inherited styles, so it only does half of what we want.</p>
+
+<p>So right now these keywords are useless =E2=80=94 except for <code>inher=
+it</code> in a few specific situations usually having to do with font sizes=
+ and colours.</p>
+
+<h3>New keyword: default</h3>
+
+<p>Chris Coyier <a href=3D"https://css-tricks.com/what-does-revert-do-in-cs=
+s/" class=3D"external">argues</a> we need a new value which he calls <code>=
+default</code>. It reverts to the browser style sheet in all cases, even fo=
+r inherited properties. Thus it is a stronger version of <code>revert</code=
+>. I agree. This keyword would be actually useful. For instance:</p>
+
+<pre style=3D"margin-right: -680px;">.my-component,.my-component * {
+	all: default;
+	font-size: inherit;
+	font-family: inherit;
+	color: inherit;
+}
+</pre>
+
+<p>Now we have a component that=E2=80=99s wiped clean, except that we decid=
+e to keep the fonts and colour of the main page. The rest is a blank slate =
+that we can style as we like. That would be a massive boon to modularisatio=
+n.</p>
+
+<h3>New keyword: cascade</h3>
+
+<p>For years now I have had the feeling that we need yet another keyword, w=
+hich I=E2=80=99ll call <code>cascade</code> for now. It would mean =E2=80=
+=9Ctake the previous value in the cascade and apply it here.=E2=80=9D For i=
+nstance:</p>
+
+<pre style=3D"margin-right: -680px;">.my-component h2 {
+	font-size: 24px;
+}
+
+.my-other-component h2 {
+	font-size: 3em;
+}
+
+h2#specialCase {
+	font-size: clamp(1vw,cascade,3vw)
+}
+</pre>
+
+<p>In this (slightly contrived) example I want to clamp the font-size of a =
+special h2 between 1vw and 3vw, with the preferred value being the one defi=
+ned for the component I=E2=80=99m working in. Here, <code>cascade</code> wo=
+uld mean: take the value the cascade would deliver if this rule didn=E2=80=
+=99t exist. This would make the clamped font size use either 24px or 3em as=
+ its preferred value, depending on which component we=E2=80=99re in.</p>
+
+<p>The problem with this example is that it could also use custom propertie=
+s. Just set <code>--h2size</code> to either 24px or 3em, use it in the clam=
+p, and you=E2=80=99re done.</p>
+
+<pre style=3D"margin-right: -680px;">.my-component h2 {
+	--h2size: 24px;
+	font-size: var(--h2size);
+}
+
+.my-other-component h2 {
+	--h2size: 3em;
+	font-size: var(--h2size);
+}
+
+h2#specialCase {
+	font-size: clamp(1vw,var(--h2size),3vw)
+}
+</pre>
+
+<p>Still, this is but the latest example I created. I have had this thought=
+ many, many times, but because I didn=E2=80=99t keep track of my use cases =
+I=E2=80=99m not sure if all of them could be served by custom properties.</=
+p>
+
+<p>Also, suppose you inherit a very messy CSS code base with dozens of comp=
+onents written at various skill levels. In that case adding custom properti=
+es to all components might be impractical, and the <code>cascade</code> key=
+word might help.</p>
+
+<p>Anyway, I barely managed to convince myself, so professional standard wr=
+iters will certainly not be impressed. Still, I thought I=E2=80=99d throw i=
+t out here to see if anyone else has a use case for <code>cascade</code> th=
+at cannot be solved with custom properties.</p>
+
+
+
+<p class=3D"coaching">[ Would you like to improve your CSS? You can hire me=
+ as a
+<a href=3D"https://www.quirksmode.org/css-coaching.html">CSS coach</a>. ]</=
+p>
+
+
+
+
+
+
+
+
+<div id=3D"footer">
+<p>If you like this page, why not <a href=3D"https://www.quirksmode.org/don=
+ations.html">donate a little bit of money</a> to help me pay my bills and c=
+reate more free content? Donating a lot of money is also allowed, BTW.</p>
+
+<a href=3D"https://www.quirksmode.org/index.html">Home</a>
+<a href=3D"https://www.quirksmode.org/contact.html">Contact</a>
+<a href=3D"https://www.quirksmode.org/donations.html">Donations</a>
+</div>
+
+
+</body></html>
+------MultipartBoundary--i03s48tkl3Z8w3NywNjE8njWszlBF70KKX6JaXjZ0a----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.quirksmode.org/quirksmode-new.css
+
+@charset "utf-8";
+
+:root { --main: #3A5F9A; --main0: #3a5f9a00; --maindark: #34558A; --transpm=
+ain: rgba(52, 85, 138, 0.05); --light: #FFF; --dark: #443a47; --navbarw: 30=
+0px; --sidebarw: 380px; --contentmd: 680px; --topMargin: 90px; --spacing: 3=
+2px; }
+
+body > :is(.intro, p, pre, ul, ol, blockquote, dl, div#footer) { width: var=
+(--contentmd); max-width: calc(100% - var(--navbarw) - var(--sidebarw)); }
+
+* { box-sizing: border-box; }
+
+div.pageHeader ~ * { margin-left: calc(var(--navbarw) + var(--spacing)); }
+
+body { background: linear-gradient(to right, var(--main) var(--navbarw), #F=
+FF var(--navbarw)); color: var(--dark); margin: 0px; padding: 0px; font-fam=
+ily: sans-serif; font-size: 1.2em; max-width: calc(var(--navbarw) + var(--s=
+idebarw)*1.5 + var(--contentmd)); }
+
+div.pageHeader { position: absolute; display: flex; flex-direction: column;=
+ background: var(--main); min-height: 100vh; width: var(--navbarw); color: =
+rgb(255, 255, 255); margin-top: -25px; }
+
+.logoQuirksmode { order: -2; display: block; text-align: center; margin: 0p=
+x; padding: 32px 16px; }
+
+.logoPPK { position: absolute; top: 24px; margin-right: 0px; right: calc(-1=
+ * (59px + var(--spacing))); }
+
+div.mainNav { padding-top: 32px; line-height: 1.7; font-family: times, seri=
+f; }
+
+div.mainNav a { padding: 4px 24px; color: rgba(255, 255, 255, 0.9); text-al=
+ign: left; transition: all 0.275s ease 0s; display: block; font-size: 115%;=
+ text-decoration: none; letter-spacing: 0.1em; }
+
+div.mainNav a:hover, div.mainNav a:focus { padding-left: 28px; padding-righ=
+t: 20px; background: rgba(0, 0, 0, 0.1); }
+
+.extraInfo { display: flex; flex-wrap: wrap; justify-content: space-around;=
+ order: -1; text-align: center; }
+
+.extraInfo a { width: 50%; margin: 0px; padding-bottom: 16px; color: rgb(25=
+5, 255, 255); font-weight: 600; background: rgba(0, 0, 0, 0.1); text-decora=
+tion: none; font-size: 80%; font-family: verdana, sans-serif; }
+
+.extraInfo a:hover, .extraInfo a:focus { text-decoration: underline; }
+
+.extraInfo form { order: -1; display: flex; background: rgba(0, 0, 0, 0.1);=
+ width: 100%; padding: 16px 16px 8px; }
+
+.extraInfo form input#searchSubmit, .extraInfo form input#searchTop { width=
+: auto; margin: 0px; border: 0px; font-size: 1em; color: var(--maindark); }
+
+.extraInfo form input#searchSubmit { border-radius: 0px 4px 4px 0px; backgr=
+ound: rgba(255, 255, 255, 0.8); font-weight: bold; }
+
+.extraInfo form input#searchTop { width: 100%; margin: 0px; padding: 12px; =
+border-radius: 4px 0px 0px 4px; box-shadow: 0px 0px 0px; }
+
+.specialMessage { left: calc(var(--navbarw) + 59px + 16px + var(--spacing))=
+; top: 12px; width: max-content; position: absolute; }
+
+.specialMessage a { display: inline-block; margin-bottom: 0px; padding: 16p=
+x 16px 16px 48px; background: var(--main) url(https\:\/\/www\.quirksmode\.o=
+rg\/pix\/header_arrow\.gif) no-repeat 16px 50% ; border-radius: 100px; colo=
+r: white; text-decoration: none; }
+
+div#header { }
+
+h2#top, .pageHeader ~ h2 { padding-top: var(--topMargin); color: var(--main=
+); font-size: 32px; font-weight: 500; }
+
+.intro, body.blog > p:first-of-type { margin-top: -0.5em; margin-bottom: 2.=
+5em; line-height: 1.55; color: var(--main); }
+
+:is(p, h3, h4, ul, ol, dl) { margin-top: 1.5em; margin-right: 0px; margin-b=
+ottom: 1.5em; padding-bottom: 0px; line-height: 1.55; margin-left: calc(var=
+(--navbarw) + var(--spacing)); }
+
+body > * > p { margin-left: 0px; }
+
+ul li, ol li { background: none; margin-left: 24px; }
+
+p a, ul li a, ol li a { color: var(--main); }
+
+ul, ol { border: none; }
+
+[name=3D"more"] { border: 0px none; background: none; visibility: hidden; d=
+isplay: none; }
+
+.entry { width: var(--contentmd); max-width: calc(100% - var(--navbarw) - v=
+ar(--sidebarw) - var(--spacing)*2); padding: 24px 16px 24px 0px; line-heigh=
+t: 1.7; overflow: auto; border: 0px none; background: rgb(255, 255, 255); }
+
+.entry a { color: var(--main); }
+
+.entry:nth-of-type(2n) { background: var(--transpmain); margin-left: calc(v=
+ar(--navbarw) + var(--spacing) - 20px); padding-left: 20px; }
+
+.entry p { font-family: sans-serif; }
+
+.entryheader * { margin: 0.5em 0px; }
+
+.entryheader h4 { font-size: 24px; }
+
+.continue { margin: 16px 0px; background: none; text-align: left; }
+
+.continue a { display: inline-block; padding: 8px 16px; background: var(--m=
+ain); color: rgb(255, 255, 255); border-radius: 100px; }
+
+blockquote { position: relative; padding-left: 3em; margin-top: 3em; margin=
+-bottom: 3em; padding-right: 3em !important; }
+
+blockquote p { line-height: 1.55; margin: 0px; padding: 0px 1em; max-width:=
+ none; width: 100%; }
+
+blockquote::after, blockquote::before { font-size: 8em; position: absolute;=
+ opacity: 0.2; height: 1em; line-height: 0; }
+
+blockquote::before { top: 0.5em; left: 0em; content: "=E2=80=9C"; }
+
+blockquote::after { right: 0px; bottom: -0.5em; content: "=E2=80=9D"; }
+
+table.compatibility { margin-right: 8px; display: block; overflow: auto; ba=
+ckground: white; }
+
+form[name=3D"contact"] p, form[name=3D"contact"] label { margin-top: 1.5em;=
+ font-family: sans-serif; line-height: 1.7; clear: none; float: none; }
+
+form[name=3D"contact"] label { font-weight: bold; }
+
+form[name=3D"contact"] label + input, form[name=3D"contact"] label + select=
+, form[name=3D"contact"] label + textarea { padding: 12px 16px; margin-top:=
+ 0.25em; border: 2px solid rgb(153, 153, 153); font-size: 16px; font-family=
+: sans-serif; border-radius: 4px; margin-left: 0px; width: 420px; max-width=
+: 100%; box-sizing: border-box; transition: all 0.275s ease 0s; }
+
+form[name=3D"contact"] label + textarea { padding: 16px; line-height: 1.35;=
+ }
+
+form[name=3D"contact"] label + input:focus, form[name=3D"contact"] label + =
+select:focus, form[name=3D"contact"] label + textarea:focus { border-color:=
+ var(--main); }
+
+form[name=3D"contact"] label + input[type=3D"submit"] { width: 180px; max-w=
+idth: 100%; font-weight: bold; background: var(--main); border-color: var(-=
+-main); color: rgb(255, 255, 255); cursor: pointer; box-shadow: rgba(0, 0, =
+0, 0.4) 0px 4px 4px -4px, rgba(0, 0, 0, 0.4) 0px 8px 16px -8px; }
+
+form[name=3D"contact"] label + input[type=3D"submit"]:focus, form[name=3D"c=
+ontact"] label + input[type=3D"submit"]:hover { transform: translateY(-2px)=
+; background: var(--maindark); border-color: var(--maindark); box-shadow: r=
+gba(0, 0, 0, 0.35) 0px 4px 6px -4px, rgba(0, 0, 0, 0.4) 0px 8px 24px -8px; =
+}
+
+form[name=3D"contact"] label + input[type=3D"submit"]:active { transform: t=
+ranslateY(1px); box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 3px -3px, rgba(0, 0,=
+ 0, 0.4) 0px 8px 8px -6px; }
+
+table.contents.contents.contents { margin-right: var(--spacing); border-col=
+lapse: collapse; }
+
+table.contents td, table.contents th { padding: 16px; }
+
+table.contents td:not(.header) { font-family: sans-serif; }
+
+td.header { background: var(--transpmain); font-size: 1.2em; text-align: ce=
+nter; color: var(--main); }
+
+td.header h3 { font-size: 1.2em; margin-bottom: 0.5em; }
+
+table.contents td.link { border-right: 2px solid var(--transpmain); }
+
+pre { max-width: calc(100% - var(--navbarw) - 1em - var(--spacing)); overfl=
+ow: auto; font-family: monospace; color: rgb(7, 7, 7); background-color: rg=
+b(238, 240, 235); margin: 2em 0px; padding: 1em; border-style: dotted; bord=
+er-color: rgb(183, 196, 211); border-image: initial; border-width: 1px 0px;=
+ font-size: 12px; line-height: 150%; }
+
+div.floater { float: right; box-sizing: border-box; width: var(--sidebarw);=
+ padding-right: 16px; line-height: 1.55; font-family: sans-serif; margin-le=
+ft: calc(var(--spacing)/2); margin-right: 0px; border-top: 3px solid var(--=
+main); border-bottom: 3px solid var(--main); border-radius: 4px 0px 0px 4px=
+; padding-left: calc(var(--spacing)/2); font-size: 0.9em; }
+
+body.blog .floater { margin-top: var(--topMargin); margin-left: 0px; }
+
+.floater :is(ol, ul) { margin-left: 0px; padding-left: 1em; }
+
+.floater li { margin-left: 0px; }
+
+.floater a { color: var(--main); }
+
+div.comments { margin: 0px; }
+
+div.comment { padding-left: 1.4em; margin-left: var(--navbarw); line-height=
+: 1.7; width: var(--contentmd); max-width: calc(100% - var(--navbarw) - var=
+(--sidebarw)); }
+
+div.comments div.comment:nth-of-type(2n-1) { background-color: rgb(238, 238=
+, 238); padding-top: 0.3em; padding-bottom: 0.3em; }
+
+div.ppkPost p.smaller { background: none; }
+
+div#footer { position: relative; color: var(--main); padding: 8px 16px 24px=
+ 32px; margin: 48px 0 0 var(--navbarw); background: var(--transpmain); line=
+-height: 1.5; }
+
+div#footer > * { border: 0px; }
+
+div#footer p { padding-bottom: 24px; }
+
+div#footer .sponsors { margin: 0px; padding: 0px; font-size: 1em; font-fami=
+ly: sans-serif; color: inherit; }
+
+div#footer a, div#footer.sponsors { position: relative; z-index: 2; color: =
+inherit; font-size: 16px; line-height: 1.55; }
+
+div#footer > a { display: inline-block; margin-top: 8px; top: 4px; color: w=
+hite; font-size: 14px; font-weight: bold; }
+
+div#footer::after { content: ""; position: absolute; right: 0px; left: 0px;=
+ bottom: 0px; height: 4em; background: var(--main); }
+
+#validation { display: none; }
+
+p.coaching { padding: 0.5em 1em; width: max-content; box-sizing: border-box=
+; background-color: rgb(58, 95, 154); color: white; border-radius: 2em; }
+
+p.coaching a { color: inherit; }
+
+p.accent { padding: 0.5em; color: var(--main); border: 1px solid; }
+
+body.blog div.wrapper { width: var(--contentmd); max-width: calc(100% - var=
+(--navbarw) - var(--sidebarw)); margin-left: calc(var(--navbarw) + var(--sp=
+acing)); }
+
+@media (max-width: 1130px) {
+  :root { --navbarw: 280px; --sidebarw: 240px; }
+}
+
+@media (max-width: 1042px) {
+  :root { --navbarw: 280px; --sidebarw: 240px; }
+  .floater ul li { margin-left: 0px; }
+  .floater ul:first-child, .floater ul:first-child + p { margin: 0px; paddi=
+ng: 16px; background: var(--transpmain); }
+  .floater ul:first-child { border-radius: 8px 8px 0px 0px; margin-top: 0px=
+; }
+  .floater ul:first-child + p { border-radius: 0px 0px 8px 8px; }
+  .floater ul:first-child + p ~ p, .floater ul:first-child + p ~ ul { displ=
+ay: none; }
+  td.declaration, col, .declaration div.name { width: 10em; min-width: 0px;=
+ }
+}
+
+@media (max-width: 1000px) {
+  :root { --contentmd: auto; --navbarw: 266px; }
+  p, ul, ol, dl, .intro ~ blockquote { padding-right: 16px; }
+}
+
+@media (max-width: 968px) {
+  :root { --contentmd: auto; --navbarw: 0; --topMargin: 10px; }
+  body { background: white; }
+  div.pageHeader { float: none; position: static; min-height: 0px; width: 1=
+00%; margin-top: 0px; }
+  .logoQuirksmode { padding: 16px; }
+  .logoQuirksmode img { height: 16px; }
+  .specialMessage { position: static; max-width: 100%; }
+  .logoPPK { display: none; }
+  div.mainNav { order: -1; display: flex; flex-wrap: wrap; width: 100%; ove=
+rflow: auto; padding-top: 0px; background: linear-gradient(to right, rgba(0=
+, 0, 0, 0.2), transparent 24px), linear-gradient(to right, rgba(0, 0, 0, 0.=
+2), transparent 8px), linear-gradient(to left, rgba(0, 0, 0, 0.2), transpar=
+ent 24px), linear-gradient(to left, rgba(0, 0, 0, 0.2), transparent 8px); }
+  div.mainNav a:first-child { background: linear-gradient(to right, var(--m=
+ain), var(--main) 24px, var(--main0) 40px); }
+  div.mainNav a:last-child { background: linear-gradient(to left, var(--mai=
+n), var(--main) 24px, var(--main0) 40px); }
+  div.mainNav a, div.mainNav a:hover, div.mainNav a:focus { border: 1px sol=
+id rgba(255, 255, 255, 0.1); padding: 8px 16px; flex-shrink: 0; }
+  div.mainNav a:hover, div.mainNav a:focus { background: var(--maindark) ; =
+}
+  h2#top, .pageHeader + h2 { }
+  div.pageHeader ~ *, table.contents { padding-left: 0px; margin-left: 24px=
+; }
+  table.compatibility { margin-left: 0px; }
+  div#footer#footer#footer { margin: 48px 0px 0px; }
+}
+
+@media (max-width: 640px) {
+  body { --navheight: 130px; display: flex; flex-direction: column; positio=
+n: relative; padding-bottom: var(--navheight) ; }
+  .floater { display: none; }
+  h2, h3, h4 { margin-right: 16px; }
+  div.pageHeader { position: static; margin-top: 0px; }
+  div.mainNav { position: absolute; bottom: 0px; left: 0px; top: auto; back=
+ground: var(--main); }
+  div.pageHeader ~ div.floater { width: auto; margin-right: calc(var(--spac=
+ing)/2); }
+  .intro { margin-right: 16px; margin-bottom: 1.5em; }
+  h3, pre, p, ul, ol { margin-top: 0.75em; margin-bottom: 0.75em; }
+  #top + .floater, #header + .floater { order: 2; width: auto; font-size: 1=
+.1em; }
+  #header + .floater ul + img[src$=3D"ppkfoto.jpg"] { display: block; width=
+: 150px; height: auto; margin: 2em auto 0.5em; border-radius: 100%; }
+  #header + .floater ul + img[src$=3D"ppkfoto.jpg"] + p { text-align: cente=
+r; }
+  .floater ul:nth-child(n) { padding-left: 24px; }
+  .floater ul:first-child + p { font-size: 1.1em; }
+  div#footer { order: 3; }
+  table.contents, table.contents tr, table.contents th, table.contents td {=
+ display: block; }
+  table.contents td.link { border-top: 2px solid var(--transpmain); padding=
+-bottom: 0px; border-right: 0px; width: auto; text-align: left; }
+}
+------MultipartBoundary--i03s48tkl3Z8w3NywNjE8njWszlBF70KKX6JaXjZ0a----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://www.quirksmode.org/pix/logo_quirksmode.gif
+
+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
+CBGQUxT5wJTBQKUV0IAQAAA7
+
+------MultipartBoundary--i03s48tkl3Z8w3NywNjE8njWszlBF70KKX6JaXjZ0a----
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: https://www.quirksmode.org/pix/logo_ppk.gif
+
+R0lGODlhOwAfAMQAAOTp8jtfm1h3qmiEskdpocjS46m505yuzNrh7bnG2/P1+cLN4HmSukJlntDZ
+55eqyvr7/J6wzXCKto2ixezv9b7K3mB+rvz8/fb3+lBwpf////3+/uDm75OnyPf5+4CXviH5BAAA
+AAAALAAAAAA7AB8AAAX/oDNYpKOdaKqubOuenEQKnxDcQfXufE8NuIDt1ggsesgkCgBsEAgBYGBC
+4WCUWF7klqBQAJRbJEveHW5HlFiDaAOuLEi77dHI3fDVnc7aGlNiDzgNAw8cKxxFNwwAE4OFhyqJ
+OAwUK35pJ0RBOBkGkpwZnDeeoEFjKmd/agEZEq8jpykUHx9SrgOvFrIotLY3B5dogAFjFxcbFAtS
+DQUrBWvHF8pSAQ4bKtDFwqua2yoUuwEM2CkLa+Di5Crn3ymC3Rro7KQA9AHBK+0Z9ubzKB9umGCV
+DxyUZvcKzjrozB8+SaIsWCLIQoGoAA1RtEOlwuKNjCc2ovBQQMonYhxT/0wiMFDjPxQrW4ZEp2CA
+IgZ1UPa5YUHBvZQo/PT8eYKCIgs5dabYUABKgA76XmoooAhqwqJOCZwk1gGAVwAOHijKMNFh169h
+x5Z1+W2DgwlOC5Tz1iCD3Ys3CIBkW/duEL0sRKZIcENCUnmjcAyQ6TBxFMZsgW6QEIAAAmIZBmjO
+NSEBBBf7NnP2DFpqh4/EDihYreDzjnaqWbt+ITiFqkyIgfKojYT3CUypkWzAAKGC1BbDi0sFzkp3
+CwACMjh9gAS69BvUUw2j2IMDp607vAcBf+K2Uh4ASFgQ8GD2i2Tq2bsvv92bc+Qb8mPJr58FPJCk
+SLBYGQSaU4QFsDgShBkOBTaYgFM3CBABAU40gFuDZGyQQAYVDhACADs=
+
+------MultipartBoundary--i03s48tkl3Z8w3NywNjE8njWszlBF70KKX6JaXjZ0a------

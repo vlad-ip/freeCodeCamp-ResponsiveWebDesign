@@ -1,0 +1,317 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(184, 132, 46);
+}
+
+/*! Old Version::
+html,
+body,
+main {
+    height: 100%;
+} */
+
+/*! New Version: */
+main {
+    height: 100vh;
+
+    /*! By themselves, relatively positioned elements are less interesting, since you rarely want to skew an element by a few pixels. However, a relatively positioned element can serve as a containing block and this is the usual reason to use position: relative. */
+    position: relative;
+}
+
+#back-wall {
+    background-color: #8b4513;
+    width: 100%;
+    height: 60%;
+
+    /*! Typically, HTML is rendered in a top-down manner, which is known as Normal Flow. Static (default) and Relative positioned elements are in Normal Flow. Absolute, Fixed and Float positioned elements are Out of Flow.
+    In order to specify the exact position of an element, add "top", "bottom", "left" and/or "roght" declarations. These offsets are relative to:
+    1. "static" >>> No Reference Point since "static" elements cannot be moved >>> offsets ignored. "Z-index" doesn't work with statically positioned elements.
+    2. "relative" >>> Reference Point = the position the element would have in the Normal Flow if it were not moved (it were "static"). It also introduces the ability to use "z-index" for the element. Even without a "z-index" value set, a "relative" positioned element will appear on TOP of any other "static" elements and you can't fight it by setting a higher "z-index" value on a "static" element > you should set a Negative "z-index" value on the "relative" element instead.
+    3. "absolute" >>> Reference Point = the nearest ancestor (containing block) that doesn't have position "static". If there is no such parent, the Reference Point will default all the way back to the <html> element itself (the "absolute" positioned element will be positioned relative to the page itself). Offsets specified as % means % of ancestor respective dimension (width or height). Same comments for "z-index" like in the case of "relative" elements.
+    4. "fixed" >>> Reference Point = the Viewport (the browser window). The Viewport doesn't change when the window is scrolled => the "fixed" element remain in its position, relative to the browser window, regardless of scrolling. On mobile browsers, because of their small screens, "fixed" is complicated
+    5. "sticky" >>> it will behave like a "relative" element until you scroll till a specific position and then it will behave as a "fixed" element relative to its nearest ancestor that has a scrolling mechanism (created when "overfow" is "hidden", "scroll", "auto" or "overlay", until it meets the opposite edge of that ancestor. */
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    /*! "z-index" is used to create "layers" for the HTML elements. Higher "z-index" values will bring those elements on TOP. */
+    Z-index: -1;
+}
+
+#offwhite-character {
+    width: 300px;
+    height: 550px;
+    background-color: ghostwhite;
+    position: absolute;
+    top: 20%;
+    left: 17.5%;
+}
+
+#white-hat {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 120px 140px 180px;
+    /*! alghough we have "width: 0;" and "height: 0;" if we set "box-sizing: border-box;", the WIDTH and HEIGHT of the element are NOT ZERO, but equal to the border thickness! That is because the width and height of the content cannot be decreased further once they become zero (thus becoming negative numbers). */
+
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: ghostwhite;
+    border-left-color: transparent;
+
+    position: absolute;
+    top: -140px;
+    left: 0;
+}
+
+#black-mask {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(45, 31, 19);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 1;
+    /* to ensure it can be seen */
+}
+
+#gray-instrument {
+    width: 15%;
+    height: 40%;
+    background-color: rgb(167, 162, 117);
+
+    position: absolute;
+    top: 50px;
+    left: 125px;
+
+    z-index: 1;
+}
+
+.black-dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(45, 31, 19);
+    border-radius: 50%;
+
+    /* display: block; >>> not needed for <div> */
+    margin: auto;
+    margin-top: 65%;
+    /*! The size of the margin as a percentage, relative to the inline size (width in a horizontal language, defined by writing-mode) of the containing block. */
+}
+
+#tan-table {
+    width: 450px;
+    height: 140px;
+    background-color: #D2691E;
+
+    position: absolute;
+    top: 275px;
+    left: 15px;
+
+    z-index: 1;
+}
+
+#black-character {
+    width: 300px;
+    height: 500px;
+    background-color: rgb(45, 31, 19);
+
+    position: absolute;
+    top: 30%;
+    left: 59%;
+}
+
+#black-hat {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 150px 0 0 300px;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: rgb(45, 31, 19);
+
+    position: absolute;
+    top: -150px;
+    left: 0;
+}
+
+#gray-mask {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(167, 162, 117);
+
+    position: absolute;
+    top: -10px;
+    left: 70px;
+}
+
+#white-paper {
+    width: 400px;
+    height: 100px;
+    background-color: ghostwhite;
+
+    position: absolute;
+    top: 250px;
+    left: -150px;
+
+    z-index: 1;
+}
+
+.fa-music {
+    /*! FontAwesome icons come with their own styling to define the icon. However, you can still set the styling yourself as well, to change things like the color and size. */
+    display: inline-block;
+    margin-top: 8%;
+    margin-left: 13%;
+}
+
+.blue {
+    background-color: #1E90FF;
+}
+
+#blue-left {
+    width: 500px;
+    height: 300px;
+
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+#blue-right {
+    width: 400px;
+    height: 300px;
+
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+
+#orange-character {
+    width: 250px;
+    height: 550px;
+    background-color: rgb(240, 78, 42);
+
+    position: absolute;
+    top: 25%;
+    left: 40%;
+}
+
+#black-round-hat {
+    /*! this is how to make an ellipse by using a <div> */
+    width: 180px;
+    height: 150px;
+    background-color: rgb(45, 31, 19);
+    border-radius: 50%;
+
+    position: absolute;
+    top: -100px;
+    left: 5px;
+
+    z-index: -1;
+}
+
+#eyes-div {
+    width: 180px;
+    height: 50px;
+
+    position: absolute;
+    top: -40px;
+    left: 20px;
+
+    z-index: 3;
+}
+
+#triangles {
+    width: 250px;
+    height: 550px;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+
+    border-style: solid;
+    border-width: 42px 45px 45px 0;
+    border-top-color: transparent;
+    border-right-color: gold;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+
+    display: inline-block;
+}
+
+#guitar {
+    width: 100%;
+    height: 100px;
+
+    position: absolute;
+    top: 120px;
+    left: 0;
+
+    z-index: 3;
+}
+
+.guitar {
+    width: 150px;
+    height: 120px;
+    background-color: goldenrod;
+    border-radius: 50%;
+}
+
+#guitar-left {
+    position: absolute;
+    left: 0;
+}
+
+#guitar-right {
+    position: absolute;
+    left: 100px;
+}
+
+.fa-bars {
+    display: block;
+    margin-top: 30$;
+    margin-left: 40%;
+}
+
+#guitar-neck {
+    width: 200px;
+    height: 30px;
+    background-color: #D2691E;
+
+    position: absolute;
+    top: 45px;
+    left: 200px;
+
+    z-index: 3;
+}
+
+.eyes {
+    width: 35px;
+    height: 20px;
+    background-color: #8B4513;
+    border-radius: 20px 50%;
+}
+
+.right {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+}
+
+.left {
+    position: absolute;
+    top: 15px;
+    left: 30px;
+}
+
+.fas {
+    font-size: 30px;
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--! This html document was made using VSCode. For readability some lines were intentionally left blank. Also, if you have installed the extension "Better Comments" the comments will appear in RED and will be easier to read -->
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cat Photo App</title>
+    <!--! <title> is useful for Search Engines and appears on the Page tab. -->
+    <!--! In this Course you will learn Basic HTML -->
+
+</head>
+
+<body>
+    <!--! Indentation of 2 spaces should suffice for improving readability! -->
+
+    <header></header>
+
+    <h1>Cat Photo App</h1>
+    <!--! Only use ONE <h1></h1> per Page! -->
+
+    <main>
+        <!--! HTML5 has some elements that identify different content areas. These elements make your HTML easier to read and help with Search Engine Optimization (SEO) and accessibility. -->
+
+        <section>
+
+            <h2>Cat Photos</h2>
+            <!--! When you add a lower rank heading element to the page, it's implied that you're starting a new subsection! -->
+
+            <p>Click here to view more cat photos</p>
+
+            <a href="https://freecatphotoapp.com" target="_blank">cat photos</a>
+
+            <a href="https://freecatphotoapp.com"><img
+                    src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+                    alt="A cute orange cat lying on its back." /></a>
+            <!--! <img /> is a self-closing tag. HTML5 doesn't require the ending / but React.js Framework will give an error if it is missing! -->
+
+        </section>
+
+        <section>
+
+            <h2>Cat Lists</h2>
+
+            <h3>Things cats love:</h3>
+
+            <ul>
+                <li>cat nip</li>
+                <li>laser pointers</li>
+                <li>lasagna</li>
+            </ul>
+
+            <figure>
+
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-hoto-app/lasagna.jpg"
+                    alt="A slice of lasagna on a plate." />
+
+                <figcaption>Cats <em>love</em> lasagna.</figcaption>
+                <!--! <figcaption> is used to add a caption to describe the image contained in the <figure> element -->
+
+                <!--! <em></em> is the Emphasis element. It makes the enveloped text look like in the case of "font-style: italic;" but it will be pronounced with Emphasis by screen readers -->
+
+            </figure>
+
+
+            <h3>Top 3 things cats hate:</h3>
+
+            <ol>
+                <li>flea treatment</li>
+                <li>thunder</li>
+                <li>other cats</li>
+            </ol>
+
+            <figure>
+
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
+                    alt="Five cats looking around a field." />
+                <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+                <!--! <strong></strong> is used to indicate that the enveloped text is of Strong Importance or Urgent. It makes the enveloped text look like in the case of <b></b> Bold or "font-weight: bold;" or "font-weight: 700;", but it also add Semantics -->
+
+            </figure>
+
+        </section>
+
+        <section>
+
+            <h2>Cat Form</h2>
+
+            <form action="https://freecatphotoapp.com/submit-cat-photo">
+                <!--! Attribute "action" indicates to the browser where Form data should be sent -->
+
+                <fieldset>
+                    <!--! <fieldset></fieldset> is a block-level element used to group related inputs and labels together in a Web Form. -->
+
+                    <legend>Is your cat an indoor or outdoor cat?</legend>
+                    <!--! <legend></legend> element acts as a Caption for the content in the <fieldset> element, giving the user a context about what to enter into that part of the Form. -->
+
+                    <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked />
+                        Indoor</label>
+
+                    <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor" /> Outdoor</label>
+
+
+                    <!--! Radio buttons are used for questions where you want ONLY ONE answer out of multiple options. -->
+
+                    <!--! Attribute "id" is used to identify specific HTML elements, thus and "id" must be Unique throughout the entire Page. -->
+
+                    <!-- ! <input name="..." /> does not have to be unique, and can be used to group elements together such as radio buttons & checkboxes. Attribute "name" shares the same namespace as the "id" Atrribute and is used by Form elements to submit information, as ONLY "input" elements with a "name" Attribute are submitted to the server. -->
+
+                    <!-- ! If you select a radio button and submit the Form, the Form data for the radio button is based on its "name" and "value" Attributes. If "value" Attribute is missing, the Form data will include "indoor-outdoor=on" - which is not useful when you have multiple buttons.-->
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>What's your cat's personality?</legend>
+
+                    <input id="loving" type="checkbox" name="personality" value="loving" checked />
+                    <label for="loving">Loving</label>
+
+                    <input id="lazy" type="checkbox" name="personality" value="lazy" />
+                    <label for="lazy">Lazy</label>
+
+                    <input id="energetic" type="checkbox" name="personality" value="energetic" />
+                    <label for="energetic">Energetic</label>
+                    <!--! <label></label> element is an INLINE element.-->
+
+                    <!--! <label></label> associates a TEXT label to an <input /> element, thus clicking the <input /> element or its TEXT label act the same (for instance both actions can check a radio button or a checkbox). -->
+
+                    <!--! <label> element can envelope the <input /> element or refer to it by using the Attribute "for='input-element_id'". In the latter case, the <label> element can be placed Before or After the <input /> element. -->
+
+                    <!--! Just like in the case of radio buttons, the Form data submitted for a selected checkbox is based on its "name" and "value" Attributes. While the "value" Attribute is Optional, it is Best Practice to include it with any checkbox or radio button on the Page. -->
+
+                    <!--! In order to make a radio button or checkbox Checked by default, add the "checked" Attribute to that <input> element. -->
+
+                </fieldset>
+
+                <input type="text" name="catphotourl" placeholder="cat photo URL" required />
+                <!--! <input /> element is an INLINE element.-->
+
+
+                <!--! <input placeholder="..." /> is used to give people a hint about what kind of information to enter into an <input> element.-->
+
+                <!--! <input required /> prevent the user from submitting the Form when a required information is missing. -->
+
+                <button type="submit">Submit</button>
+                <!--! <button></button> element is an INLINE element.-->
+
+                <!--! <button></button> creates a clickable button. Without any Attribute specified, the default behavior of a button is to submit the Form to the location specified in the Form's "action" Attribute. Best practice is to specify "type='submit'" though. -->
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+    </footer>
+
+</body>
+
+</html>

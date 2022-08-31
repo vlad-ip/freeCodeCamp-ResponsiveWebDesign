@@ -1,0 +1,115 @@
+body {
+    background-color: burlywood;
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    /*! set a background-image for the Page. */
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+h1,
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h1,
+h2,
+p {
+    text-align: center;
+    /* border: 1px solid black; /* >> was for better visualising the <h1>, <h2> and <p> elements in the design phase */
+}
+
+hr {
+    height: 2px;
+    /* "height: 2px;" so that the total apparent height of <hr /> would become 4px (because the default for the border - which here is the same color as the background - is 1px). Well, much better alternative would be here to let "height: 4px;" as we really want to see and add "box-sizing: border-box;", like in the line commented below */
+    /* box-sizing: border-box; */
+    background-color: brown;
+    border-color: brown;
+    /* when changing only the color of the border */
+}
+
+img {
+    display: block;
+    /* by displaying the <img> as a "block" we can set margins and thus center the <img> */
+    margin-inline: auto;
+    margin-top: -25px;
+    /* added a negative margin-top in order to diminish the space between the <h2> headings and the icon images below them */
+}
+
+.bottom-line {
+    margin-top: 25px;
+}
+
+.menu {
+    background-color: burlywood;
+    border: 1px solid black;
+    width: 80%;
+    max-width: 500px;
+    /* limiting the width in order to prevent it growing too wide on large screens */
+    margin-inline: auto;
+    /* padding-inline: 20px; >> done initially, only for left and right */
+    padding: 20px;
+}
+
+.established {
+    font-style: italic;
+}
+
+.flavor,
+.dessert {
+    text-align: left;
+    /* width: 75%; */
+    flex: 3;
+}
+
+.price {
+    text-align: right;
+    /* width: 25%; */
+    flex: 1;
+}
+
+.item p {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.item {
+    display: flex;
+}
+
+/* FOOTER */
+footer {
+    font-size: 14px;
+}
+
+footer a {
+    color: black;
+}
+
+footer a:visited {
+    color: grey;
+    /* I let it grey instead of black, to be able to notice the difference */
+}
+
+footer a:hover {
+    color: brown;
+}
+
+footer a:active {
+    color: white;
+    /* I let it white instead of brown, to be able to notice the difference */
+}
+
+.address {
+    margin-bottom: 5px;
+}

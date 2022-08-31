@@ -1,0 +1,119 @@
+body,
+header,
+main,
+footer,
+h1,
+header > p {
+    /* border: 1px solid green; */
+    /*! borders used during development phase */
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #1b1b32;
+    color: #f5f6f7;
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    margin: 1.5em auto;
+    /*! auto doesn't matter here, as both <h1> and <p> are block-level elements and there is no "width" set for them! */
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+form {
+    width: 60vw;
+    min-width: 300px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+fieldset {
+    /* border: none; */
+    border-color: antiquewhite;
+    padding: 2em 1em;
+    /* I preferred to keep the fieldset borders and legends, thus I used 1em left and right padding */
+    border-bottom: 10px solid #3b3b4f;
+    /* the border-bottom overwrite the initial border of the fieldsets */
+    margin-bottom: 20px;
+}
+
+fieldset:last-of-type {
+    border-bottom-color: #3b3b6f;
+    margin-bottom: 15px;
+}
+
+legend {
+    /* display: none; */
+    /* I preferred to keep the legends as they are useful for the user */
+}
+
+label {
+    display: block;
+    /* each label will take one line */
+    /*! by default, <label> & <input /> are "inline" elements! */
+    /* If using "display: block;" for <label> => Case1: when <label> envelope the <input>, you see <label> and <input> fields on the same line. Case2: when using <label for="...">, thus it doesn't envelope the <input>, the 2 fields appears on different lines */
+    margin: 0.5em 0;
+    /* for vertical separation between the rows */
+}
+
+input,
+select,
+textarea {
+    Width: 100%;
+    margin: 10px 0 0 0;
+    box-sizing: border-box;
+    /*! ATTN: without this setting the <select>  and <input type="file" /> fields will look smaller than the <input type="text" /> and <textarea> fields because of different padding!
+    But we can also solve this problem by modifying the padding for the <select> element to "padding: 1px 2px;" in order to be identical to the one - thing we did at the end of this file. */
+    min-height: 2em;
+}
+
+input,
+textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: hsl(190, 100%, 50%);
+}
+
+.inline {
+    width: unset;
+    /*! this partially anulates the rule above which set all the <input> elements to "width: 100%;" => thus, the .inline elements (the radio-buttons and checkbox) are not forced to occupy an entire line. */
+    margin: 0 0.75em 0 0;
+    vertical-align: baseline;
+}
+
+a:link {
+    color: hsl(210, 100%, 75%);
+}
+
+a:visited {
+    color: hsl(210, 25%, 40%);
+}
+
+a:hover {
+    color: hsl(270, 100%, 50%);
+}
+
+a:active {
+    color: hsl(0, 0%, 100%);
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    min-width: 300px;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+
+}
+
+input[type="file"] {
+    /*padding: 1px 2px;*/
+    /*! OK, this can solve the problem for the <input type="file" /> field being shorter than the <input type="text" /> fields, BUT will not solve the problem for the <selector> field being shorter => we solved BOTH by adding "box-sizing: border-box;" at Line 70! */
+}

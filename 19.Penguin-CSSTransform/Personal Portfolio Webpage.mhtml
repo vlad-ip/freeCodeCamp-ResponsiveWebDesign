@@ -1,0 +1,574 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: http://localhost:3000/index.html
+Subject: Personal Portfolio Webpage
+Date: Fri, 19 Aug 2022 12:07:16 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--nhQV6rw2vHsYTYSLGH56gkbFOtib2WcLS8ljTneWra----"
+
+
+------MultipartBoundary--nhQV6rw2vHsYTYSLGH56gkbFOtib2WcLS8ljTneWra----
+Content-Type: text/html
+Content-ID: <frame-4F22CC1CE8C5D815A3186D73E157A179@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://localhost:3000/index.html
+
+<!DOCTYPE html><html lang=3D"en"><head><meta http-equiv=3D"Content-Type" co=
+ntent=3D"text/html; charset=3DUTF-8">
+   =20
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <meta name=3D"description" content=3D"Personal Portfolio Webpage">
+    <title>Personal Portfolio Webpage</title>
+    <link rel=3D"stylesheet" href=3D"http://localhost:3000/css/styles.css">
+</head>
+
+<body>
+
+    <header></header>
+
+    <main>
+        <section id=3D"welcome-section">
+            <h1>Personal Portfolio Webpage</h1>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <div id=3D"fcc_test_suite_wrapper" style=3D"position: relative !importa=
+nt; z-index: 99999 !important;"><template shadowmode=3D"open"><div class=3D=
+"fcc_test_ui"><div id=3D"fcc_foldout_toggler"> <span id=3D"hamburger_top" c=
+lass=3D"fcc_hamburger transform_top"></span> <span id=3D"hamburger_middle" =
+class=3D"fcc_hamburger transform_middle"></span> <span id=3D"hamburger_bott=
+om" class=3D"fcc_hamburger transform_bottom"></span> <span id=3D"fcc_foldou=
+t_toggler_background"></span> </div> <input id=3D"fcc_toggle" type=3D"check=
+box" title=3D"CTRL + SHIFT + O"> <div id=3D"fcc_test_suite_indicator_wrappe=
+r"><span id=3D"fcc_test_suite_indicator">FCC Test Suite: Product Landing Pa=
+ge</span></div> <div id=3D"fcc_foldout_menu"><div id=3D"fcc_foldout_menu_in=
+ner"> <label for=3D"test-suite-selector">Select Test Suite:</label> <select=
+ name=3D"Test Suite Selector" id=3D"test-suite-selector"> <option id=3D"pla=
+ceholder" value=3D"">- - -</option> <option value=3D"tribute-page">Tribute =
+Page</option><option value=3D"portfolio">Personal Portfolio</option><option=
+ value=3D"survey-form">Survey Form</option><option value=3D"product-landing=
+-page">Product Landing Page</option><option value=3D"technical-docs-page">T=
+echnical Documentation Page</option><option value=3D"random-quote-machine">=
+Random Quote Machine</option><option value=3D"markdown-previewer">Markdown =
+Previewer</option><option value=3D"drum-machine">Drum Machine</option><opti=
+on value=3D"25-5-clock">25 + 5 Clock</option><option value=3D"javascript-ca=
+lculator">Javascript Calculator</option><option value=3D"bar-chart">D3: Bar=
+ Chart</option><option value=3D"scatter-plot">D3: Scatter Plot</option><opt=
+ion value=3D"heat-map">D3: Heat Map</option><option value=3D"choropleth">D3=
+: Choropleth</option><option value=3D"tree-map">D3: Tree Map</option></sele=
+ct> <div id=3D"fcc_test_buttons_wrapper"> <button id=3D"fcc_test_message-bo=
+x-rerun-button" type=3D"button" class=3D"fcc_foldout_button" title=3D"CTRL =
++ SHIFT + ENTER"> Run Tests </button> <button id=3D"fcc_test_button" type=
+=3D"button" class=3D"fcc_foldout_button fcc_test_btn-default fcc_test_btn-d=
+one fcc_test_btn-error" title=3D"CTRL + SHIFT + T">1/16 Passed</button> </d=
+iv> <div id=3D"fcc_legend_wrapper"> <div class=3D"fcc_legend key"></div> <s=
+pan class=3D"fcc_legend">Test(s) Failed</span> <div class=3D"fcc_legend key=
+"></div> <span class=3D"fcc_legend">Tests Passed</span> <div class=3D"fcc_l=
+egend key"></div> <span class=3D"fcc_legend">Tests Executing</span> </div> =
+<span id=3D"fcc_ask-for-help"><a href=3D"https://forum.freecodecamp.org/c/g=
+eneral" target=3D"_blank">Ask For Help</a> </span> </div> </div></div><div =
+class=3D"fcc_test_ui"><div id=3D"fcc_test_message-box" class=3D"fcc_test_me=
+ssage-box-hidden"> <div class=3D"fcc_test_message-box-content"> <div class=
+=3D"fcc_test_section fcc_test_message-box-header"> <div class=3D"fcc_test_t=
+itle">#Product Landing Page tests</div> <div class=3D"fcc_test_stats"><ul c=
+lass=3D"fcc_test_mocha-stats">
+        <li class=3D"passes">passes:<em>1</em></li>
+        <li class=3D"failures">failures:<em>15</em></li>
+        <li class=3D"duration">duration:<em>0.01</em></li>
+        <li class=3D"progress"><canvas width=3D"40" height=3D"40"></canvas>=
+</li>
+      </ul></div> </div> <div class=3D"fcc_test_section fcc_test_message-bo=
+x-body"> <div class=3D"fcc_test_report"><ul class=3D"fcc_test_mocha-report"=
+><li class=3D"suite"><h1>#Technology Stack</h1><ul><li class=3D"test pass f=
+ast">
+          <h2>1. You can use HTML, JavaScript, and CSS to complete this pro=
+ject. Plain CSS is recommended because that is what the lessons have covere=
+d so far and you should get some practice with plain CSS. You can use Boots=
+trap or SASS if you choose. Additional technologies (just for example jQuer=
+y, React, Angular, or Vue) are not recommended for this project, and using =
+them is at your own risk. Other projects will give you a chance to work wit=
+h different technology stacks like React. We will accept and try to fix all=
+ issue reports that use the suggested technology stack for this project. Ha=
+ppy coding!<span class=3D"duration">0ms</span></h2>
+        <pre style=3D"display: none;"><code>a.assert.ok(!0)</code></pre></l=
+i></ul></li><li class=3D"suite"><h1>#Content</h1><ul><li class=3D"test fail=
+">
+          <h2>1. My product landing page should have a &lt;header&gt; eleme=
+nt with
+      corresponding id=3D"header".</h2>
+        <pre class=3D"error">#header is not defined : expected null to not =
+equal null
+AssertionError: #header is not defined : expected null to not equal null
+    at Proxy.c (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundl=
+e.js:525:1889)
+    at Proxy.u (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundl=
+e.js:407:130)
+    at n.isNotNull (https://cdn.freecodecamp.org/testable-projects-fcc/v1/b=
+undle.js:550:1549)
+    at n.&lt;anonymous&gt; (https://cdn.freecodecamp.org/testable-projects-=
+fcc/v1/bundle.js:584:119916)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+259477
+    at Dg.run (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle=
+.js:569:259772)
+    at Qg.runTest (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bu=
+ndle.js:569:274680)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+275616
+    at o (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:5=
+69:274033)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+274103</pre><pre style=3D"display: none;"><code>a.assert.isNotNull(document=
+.getElementById("header"),"#header is not defined ")</code></pre></li><li c=
+lass=3D"test fail">
+          <h2>2. I can see an image within the #header element with a
+      corresponding id=3D"header-img". A company logo would make a good ima=
+ge
+      here. </h2>
+        <pre class=3D"error">#header-img is not defined : expected null to =
+not equal null
+AssertionError: #header-img is not defined : expected null to not equal nul=
+l
+    at Proxy.c (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundl=
+e.js:525:1889)
+    at Proxy.u (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundl=
+e.js:407:130)
+    at n.isNotNull (https://cdn.freecodecamp.org/testable-projects-fcc/v1/b=
+undle.js:550:1549)
+    at n.&lt;anonymous&gt; (https://cdn.freecodecamp.org/testable-projects-=
+fcc/v1/bundle.js:584:120204)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+259477
+    at Dg.run (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle=
+.js:569:259772)
+    at Qg.runTest (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bu=
+ndle.js:569:274680)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+275616
+    at o (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:5=
+69:274033)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+274103</pre><pre style=3D"display: none;"><code>var e=3Ddocument.getElement=
+ById("header-img");a.assert.isNotNull(e,"#header-img is not defined "),a.as=
+sert.strictEqual(e.nodeName,"IMG","#header-img is not an &lt;img&gt; elemen=
+t "),a.assert.strictEqual(document.querySelectorAll("#header #header-img").=
+length,1,"#header-img is not a child of #header element "),a.assert.strictE=
+qual(e.hasAttribute("src"),!0,"#header-img must have a src attribute "),a.a=
+ssert.include(e.src,"http","The src attribute's value should be a url (http=
+...) ")</code></pre></li><li class=3D"test fail">
+          <h2>3. Within the &lt;header&gt; element I can see a &lt;nav&gt; =
+element with
+      corresponding id=3D"nav-bar".'</h2>
+        <pre class=3D"error">#nav-bar is not defined : expected null to not=
+ equal null
+AssertionError: #nav-bar is not defined : expected null to not equal null
+    at Proxy.c (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundl=
+e.js:525:1889)
+    at Proxy.u (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundl=
+e.js:407:130)
+    at n.isNotNull (https://cdn.freecodecamp.org/testable-projects-fcc/v1/b=
+undle.js:550:1549)
+    at n.&lt;anonymous&gt; (https://cdn.freecodecamp.org/testable-projects-=
+fcc/v1/bundle.js:584:120753)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+259477
+    at Dg.run (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle=
+.js:569:259772)
+    at Qg.runTest (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bu=
+ndle.js:569:274680)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+275616
+    at o (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:5=
+69:274033)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+274103</pre><pre style=3D"display: none;"><code>a.assert.isNotNull(document=
+.getElementById("nav-bar"),"#nav-bar is not defined "),a.assert.strictEqual=
+(document.getElementById("nav-bar").nodeName,"NAV","The #nav-bar element is=
+ not a &lt;nav&gt; element "),a.assert.strictEqual(document.querySelectorAl=
+l("#header #nav-bar").length,1,"#nav-bar is not a child of #header ")</code=
+></pre></li><li class=3D"test fail">
+          <h2>4. I can see at least three clickable elements inside the nav
+      element, each with the class "nav-link".</h2>
+        <pre class=3D"error">There are not at least 3 elements with a class=
+ of "nav-link" within the #nav-bar element : expected 0 to be at least 3
+AssertionError: There are not at least 3 elements with a class of "nav-link=
+" within the #nav-bar element : expected 0 to be at least 3
+    at Proxy.p (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundl=
+e.js:525:3833)
+    at Proxy.u (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundl=
+e.js:407:130)
+    at n.isAtLeast (https://cdn.freecodecamp.org/testable-projects-fcc/v1/b=
+undle.js:550:1030)
+    at n.&lt;anonymous&gt; (https://cdn.freecodecamp.org/testable-projects-=
+fcc/v1/bundle.js:584:121196)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+259477
+    at Dg.run (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle=
+.js:569:259772)
+    at Qg.runTest (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bu=
+ndle.js:569:274680)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+275616
+    at o (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:5=
+69:274033)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+274103</pre><pre style=3D"display: none;"><code>a.assert.isAtLeast(document=
+.querySelectorAll("#nav-bar .nav-link").length,3,'There are not at least 3 =
+elements with a class of "nav-link" within the #nav-bar element ')</code></=
+pre></li><li class=3D"test fail">
+          <h2>5. When I click a .nav-link button in the nav element, I am
+      taken to the corresponding section of the landing page.'</h2>
+        <pre class=3D"error">The #nav-bar contains no .nav-link: expected 0=
+ to be at least 1
+AssertionError: The #nav-bar contains no .nav-link: expected 0 to be at lea=
+st 1
+    at Proxy.p (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundl=
+e.js:525:3833)
+    at Proxy.u (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundl=
+e.js:407:130)
+    at n.isAtLeast (https://cdn.freecodecamp.org/testable-projects-fcc/v1/b=
+undle.js:550:1030)
+    at n.&lt;anonymous&gt; (https://cdn.freecodecamp.org/testable-projects-=
+fcc/v1/bundle.js:584:121560)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+259477
+    at Dg.run (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle=
+.js:569:259772)
+    at Qg.runTest (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bu=
+ndle.js:569:274680)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+275616
+    at o (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:5=
+69:274033)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+274103</pre><pre style=3D"display: none;"><code>var e=3Ddocument.querySelec=
+torAll("#nav-bar .nav-link");a.assert.isAtLeast(e.length,1,"The #nav-bar co=
+ntains no .nav-link"),e.forEach((function(e){a.assert.isNotNull(e),a.assert=
+.strictEqual(e.hasAttribute("href"),!0,"Each .nav-link element should have =
+an href attribute ");var t=3De.getAttribute("href").slice(1);a.assert.isNot=
+Null(document.getElementById(t),'The .nav-link with href=3D"'+e.getAttribut=
+e("href")+'" is not linked to a corresponding element on the page ')}))</co=
+de></pre></li><li class=3D"test fail">
+          <h2>6. I can watch an embedded product video with id=3D"video".</=
+h2>
+        <pre class=3D"error">#video is not defined : expected null to not e=
+qual null
+AssertionError: #video is not defined : expected null to not equal null
+    at Proxy.c (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundl=
+e.js:525:1889)
+    at Proxy.u (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundl=
+e.js:407:130)
+    at n.isNotNull (https://cdn.freecodecamp.org/testable-projects-fcc/v1/b=
+undle.js:550:1549)
+    at n.&lt;anonymous&gt; (https://cdn.freecodecamp.org/testable-projects-=
+fcc/v1/bundle.js:584:122091)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+259477
+    at Dg.run (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle=
+.js:569:259772)
+    at Qg.runTest (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bu=
+ndle.js:569:274680)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+275616
+    at o (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:5=
+69:274033)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+274103</pre><pre style=3D"display: none;"><code>var e=3Ddocument.getElement=
+ById("video");if(a.assert.isNotNull(e,"#video is not defined "),Object(a.as=
+sert)("VIDEO"=3D=3D=3De.nodeName||"IFRAME"=3D=3D=3De.nodeName,"#video shoul=
+d be an &lt;iframe&gt; or &lt;video&gt; element "),e.children.length&gt;0){=
+var t=3DY()(e.children).filter((function(e){return"SOURCE"=3D=3D=3De.tagNam=
+e}))[0];void 0!=3D=3Dt&amp;&amp;(e=3Dt)}a.assert.strictEqual(e.hasAttribute=
+("src"),!0,"#video should have a src attribute ")</code></pre></li><li clas=
+s=3D"test fail">
+          <h2>7. My landing page has a &lt;form&gt; element with a correspo=
+nding
+      id=3D"form".'</h2>
+        <pre class=3D"error">#form is not defined : expected null to not eq=
+ual null
+AssertionError: #form is not defined : expected null to not equal null
+    at Proxy.c (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundl=
+e.js:525:1889)
+    at Proxy.u (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundl=
+e.js:407:130)
+    at n.isNotNull (https://cdn.freecodecamp.org/testable-projects-fcc/v1/b=
+undle.js:550:1549)
+    at n.&lt;anonymous&gt; (https://cdn.freecodecamp.org/testable-projects-=
+fcc/v1/bundle.js:584:122548)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+259477
+    at Dg.run (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle=
+.js:569:259772)
+    at Qg.runTest (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bu=
+ndle.js:569:274680)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+275616
+    at o (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:5=
+69:274033)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+274103</pre><pre style=3D"display: none;"><code>a.assert.isNotNull(document=
+.getElementById("form"),"#form is not defined "),a.assert.strictEqual(docum=
+ent.getElementById("form").nodeName,"FORM","#form should be a &lt;form&gt; =
+element ")</code></pre></li><li class=3D"test fail">
+          <h2>8. Within the form, there is an &lt;input&gt; field with id=
+=3D"email"
+      where I can enter an email address.</h2>
+        <pre class=3D"error">#email is not defined : expected null to not e=
+qual null
+AssertionError: #email is not defined : expected null to not equal null
+    at Proxy.c (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundl=
+e.js:525:1889)
+    at Proxy.u (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundl=
+e.js:407:130)
+    at n.isNotNull (https://cdn.freecodecamp.org/testable-projects-fcc/v1/b=
+undle.js:550:1549)
+    at n.&lt;anonymous&gt; (https://cdn.freecodecamp.org/testable-projects-=
+fcc/v1/bundle.js:584:122852)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+259477
+    at Dg.run (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle=
+.js:569:259772)
+    at Qg.runTest (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bu=
+ndle.js:569:274680)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+275616
+    at o (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:5=
+69:274033)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+274103</pre><pre style=3D"display: none;"><code>a.assert.isNotNull(document=
+.getElementById("email"),"#email is not defined "),a.assert.strictEqual(doc=
+ument.querySelectorAll("#form #email").length,1,"#email should be a child o=
+f the #form element "),a.assert.strictEqual(document.getElementById("email"=
+).nodeName,"INPUT","#email should be an &lt;input&gt; element ")</code></pr=
+e></li><li class=3D"test fail">
+          <h2>9. The #email input field should have placeholder text to let
+      the user know what the field is for.</h2>
+        <pre class=3D"error">Cannot read properties of null (reading 'hasAt=
+tribute')
+TypeError: Cannot read properties of null (reading 'hasAttribute')
+    at n.&lt;anonymous&gt; (https://cdn.freecodecamp.org/testable-projects-=
+fcc/v1/bundle.js:584:123339)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+259477
+    at Dg.run (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle=
+.js:569:259772)
+    at Qg.runTest (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bu=
+ndle.js:569:274680)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+275616
+    at o (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:5=
+69:274033)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+274103
+    at o (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:5=
+69:272852)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+273918
+    at xy (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:=
+575:14311)</pre><pre style=3D"display: none;"><code>var e=3Ddocument.getEle=
+mentById("email");a.assert.strictEqual(e.hasAttribute("placeholder"),!0,"Th=
+e #email input field does not have placeholder text "),a.assert.isAbove(e.g=
+etAttribute("placeholder").length,0,"The #email placeholder attribute shoul=
+d have some text ")</code></pre></li><li class=3D"test fail">
+          <h2>10. The #email input field uses HTML5 validation to confirm
+      that the entered text is an email address.</h2>
+        <pre class=3D"error">Cannot read properties of null (reading 'type'=
+)
+TypeError: Cannot read properties of null (reading 'type')
+    at n.&lt;anonymous&gt; (https://cdn.freecodecamp.org/testable-projects-=
+fcc/v1/bundle.js:584:123731)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+259477
+    at Dg.run (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle=
+.js:569:259772)
+    at Qg.runTest (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bu=
+ndle.js:569:274680)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+275616
+    at o (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:5=
+69:274033)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+274103
+    at o (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:5=
+69:272852)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+273918
+    at xy (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:=
+575:14311)</pre><pre style=3D"display: none;"><code>var e=3Ddocument.getEle=
+mentById("email");a.assert.strictEqual(e.type,"email","The #email input ele=
+ment should use HTML5 validation ")</code></pre></li><li class=3D"test fail=
+">
+          <h2>11. Within the form, there is a submit button with
+      corresponding id=3D"submit".</h2>
+        <pre class=3D"error">#submit is not defined : expected null to not =
+equal null
+AssertionError: #submit is not defined : expected null to not equal null
+    at Proxy.c (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundl=
+e.js:525:1889)
+    at Proxy.u (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundl=
+e.js:407:130)
+    at n.isNotNull (https://cdn.freecodecamp.org/testable-projects-fcc/v1/b=
+undle.js:550:1549)
+    at n.&lt;anonymous&gt; (https://cdn.freecodecamp.org/testable-projects-=
+fcc/v1/bundle.js:584:123951)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+259477
+    at Dg.run (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle=
+.js:569:259772)
+    at Qg.runTest (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bu=
+ndle.js:569:274680)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+275616
+    at o (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:5=
+69:274033)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+274103</pre><pre style=3D"display: none;"><code>var e=3Ddocument.getElement=
+ById("submit");a.assert.isNotNull(e,"#submit is not defined "),a.assert.str=
+ictEqual(document.querySelectorAll("#form #submit").length,1,"#submit shoul=
+d be a child of the #form element "),Object(a.assert)("BUTTON"=3D=3D=3De.no=
+deName||"INPUT"=3D=3D=3De.nodeName,"#submit should be an &lt;input&gt; or &=
+lt;button&gt; element "),a.assert.strictEqual(e.type,"submit","The #submit =
+element type attribute is incorrect ")</code></pre></li><li class=3D"test f=
+ail">
+          <h2>12. When I click the #submit element, the email is submitted =
+to
+      a static page (use this mock URL:
+      https://www.freecodecamp.com/email-submit).</h2>
+        <pre class=3D"error">Cannot read properties of null (reading 'hasAt=
+tribute')
+TypeError: Cannot read properties of null (reading 'hasAttribute')
+    at n.&lt;anonymous&gt; (https://cdn.freecodecamp.org/testable-projects-=
+fcc/v1/bundle.js:584:124585)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+259477
+    at Dg.run (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle=
+.js:569:259772)
+    at Qg.runTest (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bu=
+ndle.js:569:274680)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+275616
+    at o (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:5=
+69:274033)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+274103
+    at o (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:5=
+69:272852)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+273918
+    at xy (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:=
+575:14311)</pre><pre style=3D"display: none;"><code>var e=3Ddocument.getEle=
+mentById("email"),t=3Ddocument.getElementById("form");a.assert.strictEqual(=
+t.hasAttribute("action"),!0,"The #form should have an action attribute "),a=
+.assert.include(t.action,"http","The action attribute's value should be a u=
+rl (http...) "),a.assert.strictEqual(e.hasAttribute("name"),!0,"The #email =
+input should have a name attribute "),a.assert.strictEqual(e.name,"email",'=
+The #email element\'s name attribute should have a value of "email" ')</cod=
+e></pre></li></ul></li><li class=3D"suite"><h1>#Layout</h1><ul><li class=3D=
+"test fail">
+          <h2>1. The navbar should always be at the top of the viewport.</h=
+2>
+        <pre class=3D"error">Cannot read properties of null (reading 'child=
+ren')
+TypeError: Cannot read properties of null (reading 'children')
+    at n.&lt;anonymous&gt; (https://cdn.freecodecamp.org/testable-projects-=
+fcc/v1/bundle.js:584:125108)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+259477
+    at Dg.run (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle=
+.js:569:259772)
+    at Qg.runTest (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bu=
+ndle.js:569:274680)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+275616
+    at o (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:5=
+69:274033)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+274103
+    at o (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:5=
+69:272852)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+273918
+    at xy (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:=
+575:14311)</pre><pre style=3D"display: none;"><code>var e=3Ddocument.getEle=
+mentById("header"),t=3De.children,r=3D[e].concat(Y()(t));function n(e){for(=
+var t=3DMath.abs(e[0].getBoundingClientRect().top),r=3D1;r&lt;e.length;r++)=
+{var a=3DMath.abs(e[r].getBoundingClientRect().top);a&lt;t&amp;&amp;(t=3Da)=
+}return t}a.assert.approximately(n(r),0,15,"#header or one of its children =
+should be at the top of the viewport "),window.scroll(0,500),a.assert.appro=
+ximately(n(r),0,15,"#header or one of its children should be at the top of =
+the viewport even after scrolling "),window.scroll(0,0)</code></pre></li><l=
+i class=3D"test fail">
+          <h2>2. My product landing page should have at least one media
+      query.</h2>
+        <pre class=3D"error">No media queries detected : expected false to =
+be true
+AssertionError: No media queries detected : expected false to be true
+    at o.&lt;anonymous&gt; (https://cdn.freecodecamp.org/testable-projects-=
+fcc/v1/bundle.js:525:14996)
+    at o.e (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js=
+:401:182)
+    at Reflect.get (&lt;anonymous&gt;)
+    at Object.e [as get] (https://cdn.freecodecamp.org/testable-projects-fc=
+c/v1/bundle.js:68:1382)
+    at n.isTrue (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bund=
+le.js:550:1222)
+    at n.&lt;anonymous&gt; (https://cdn.freecodecamp.org/testable-projects-=
+fcc/v1/bundle.js:584:125663)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+259477
+    at Dg.run (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle=
+.js:569:259772)
+    at Qg.runTest (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bu=
+ndle.js:569:274680)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+275616</pre><pre style=3D"display: none;"><code>a.assert.isTrue(Q(document.=
+styleSheets),"No media queries detected ")</code></pre></li><li class=3D"te=
+st fail">
+          <h2>3. My product landing page should utilize CSS flexbox at leas=
+t
+      once.</h2>
+        <pre class=3D"error">We do not detect a display property set to fle=
+x or inline-flex anywhere in your CSS : expected false to be true
+AssertionError: We do not detect a display property set to flex or inline-f=
+lex anywhere in your CSS : expected false to be true
+    at o.&lt;anonymous&gt; (https://cdn.freecodecamp.org/testable-projects-=
+fcc/v1/bundle.js:525:14996)
+    at o.e (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js=
+:401:182)
+    at Reflect.get (&lt;anonymous&gt;)
+    at Object.e [as get] (https://cdn.freecodecamp.org/testable-projects-fc=
+c/v1/bundle.js:68:1382)
+    at n.isTrue (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bund=
+le.js:550:1222)
+    at n.&lt;anonymous&gt; (https://cdn.freecodecamp.org/testable-projects-=
+fcc/v1/bundle.js:584:125826)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+259477
+    at Dg.run (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle=
+.js:569:259772)
+    at Qg.runTest (https://cdn.freecodecamp.org/testable-projects-fcc/v1/bu=
+ndle.js:569:274680)
+    at https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js:569:=
+275616</pre><pre style=3D"display: none;"><code>a.assert.isTrue(function e(=
+t){return $(t).some((function(t){return t.type=3D=3D=3DCSSRule.STYLE_RULE?f=
+unction(e){return!Z(e)&amp;&amp;("flex"=3D=3D=3De.style.display||"inline-fl=
+ex"=3D=3D=3De.style.display)}(t):e([t])}))}(document.styleSheets),"We do no=
+t detect a display property set to flex or inline-flex anywhere in your CSS=
+ ")</code></pre></li></ul></li></ul></div> </div> <div class=3D"fcc_test_se=
+ction fcc_test_message-box-footer"> <div class=3D"fcc_test_message-box-clos=
+e-btn"> Close </div> </div> </div> </div> </div></template></div>
+
+
+</body></html>
+------MultipartBoundary--nhQV6rw2vHsYTYSLGH56gkbFOtib2WcLS8ljTneWra----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://localhost:3000/css/styles.css
+
+@charset "utf-8";
+=0A
+------MultipartBoundary--nhQV6rw2vHsYTYSLGH56gkbFOtib2WcLS8ljTneWra------

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--! Attribute "lang" assists screen readers in identifying the language of the page -->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.1" />
+    <!--! a "viewport" definition tells the browser how to render the page for better visual acessibility on mobile and improves SEO. -->
+    <meta name="description" content="freeCodeCamp Accessibility Quiz practice project" />
+    <!--! a "description" definition is important for accessibility and SEO. -->
+    <title>Accessibility Quiz</title>
+    <!--! <title> is useful for screen readers to understand the content of a Page. Also, it is an important part for SEO. -->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <header>
+        <!--! the <header> element is used to introduce the page, as wall as provide a navigation menu -->
+        <img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freeCodeCamp Logo" id="logo" />
+        <!--! a SVG (scalable vector graphics) contains a path attribute which allows the image to be scaled without affecting the resolution of the resultant image. Currently the img is assuming its default size, which is too large in this case >>> we will scale the image by using its #id as a selector. -->
+        <h1>HTML/CSS Quiz</h1>
+        <nav>
+            <ul>
+                <li><a href="#student-info" accesskey="i">INFO</a></li>
+                <li><a href="#html-questions" accesskey="h">HTML</a></li>
+                <li><a href="#css-questions" accesskey="c">CSS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--! the <main> element will contain the core content of the page -->
+        <form action="https://freecodecamp.org/practice-project/accessibility-quiz" method="post">
+            <section role="region" aria-labelledby="student-info">
+                <!--! pay attention to the Attributes role="region" aria-labelledby="id..." -->
+                <h2 id="student-info">Student Info</h2>
+                <div class="info">
+                    <label for="student-name">Name: </label>
+                    <input type="text" id="student-name" name="student-name" placeholder="Please type your name" />
+                </div>
+                <div class="info">
+                    <label for="student-email">Email: </label>
+                    <input type="email" id="student-email" name="student-email" placeholder="Please type your email" />
+                </div>
+                <div class="info">
+                    <label for="birth-date">D.O.B.: <span class="sr-only">(Date of
+                            Birth)</span></label>
+                    <input type="date" id="birth-date" name="birth-date" placeholder="Please type your birth date" />
+                    <!--! unsing a "placeholder" Attribute is actually not a best-practice for accessibility; too often, users confuse the placeholder text with an actual input value - they think there is already a value in the input. Relying on the label is the best-practice.-->
+                </div>
+                <!--! It is important to link each input to the corresponding label element. This provides assistive technology users with a visual reference to the input. -->
+            </section>
+            <section role="region" aria-labelledby="html-questions">
+                <h2 id="html-questions">HTML</h2>
+                <div class="question-block">
+                    <p>1</p>
+                    <fieldset class="question" name="html-question-one">
+                        <legend>The legend element represents a caption for the content of its
+                            parent fieldset element.</legend>
+                        <ul class="answers-list">
+                            <li><label for="q1-a1"><input type="radio" id="q1-a1" name="q1" value="true" /> True</label>
+                            </li>
+                            <li><label for="q1-a2"><input type="radio" id="q1-a2" name="q1" value="false" />
+                                    False</label></li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <div class="question-block">
+                    <p>2</p>
+                    <fieldset class="question" name="html-question-two">
+                        <legend>A label element nesting an input element is required to have a
+                            for attribute with the same value as the input's id.</legend>
+                        <ul class="answers-list">
+                            <li><label for="q2-a1"><input type="radio" id="q2-a1" name="q2" value="true" /> True</label>
+                            </li>
+                            <li><label for="q2-a2"><input type="radio" id="q2-a2" name="q2" value="false" /></label>
+                                False</li>
+                        </ul>
+                    </fieldset>
+                </div>
+            </section>
+            <section role="region" aria-labelledby="css-questions">
+                <h2 id="css-questions">CSS</h2>
+                <!--! To increase the page accessibility, the "role" Attribute can be used to indicate the purpose behind an element on the page to assistive technologies. The role attribute is a part of the Web Accessibility Initiative (WAI), and accepts PRESET values. -->
+                <!--! Every "region" role requires a visible label, which should be referenced by the "aria-labelledby" Attribute, whose value must match the value of the "id" Attribute of an element nested inside the <section> >>> <h2> in this case. -->
+                <div class="formrow">
+                    <div class="question-block">
+                        <label for="customer">Are you a frontend developer?</label>
+                    </div>
+                    <div class="answer">
+                        <select id="customer" name="customer" required>
+                            <option value="">Select an option</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="question-block">
+                        <label for="css-questions">Do you have any questions:</label>
+                    </div>
+                    <div class="answer">
+                        <textarea id="css-questions" name="css-questions" rows="5" cols="24"
+                            placeholder="Who is flexbox..."></textarea>
+                    </div>
+                </div>
+            </section>
+            <button type="submit" accesskey="s">Submit</button>
+            <!--! the "accesskey" Attribute accepts a space-separated list of access keys, which are keyboard shortcuts for improving the navigation acessibility of the page. -->
+        </form>
+    </main>
+
+    <footer>
+        <!--! the <footer> is a semantic element that is a container for a collection of content that is related to the page -->
+        <address>
+            <!--! the <address> is a semantic element that is a container for contact information for the author of the page -->
+
+            <a href="https://freecodeamp.org">freeCodeCamp</a><br />
+            San Francisco<br />
+            California<br />
+            USA
+        </address>
+    </footer>
+</body>
+
+</html>

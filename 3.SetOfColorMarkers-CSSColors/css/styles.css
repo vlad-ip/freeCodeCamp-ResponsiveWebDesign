@@ -1,0 +1,135 @@
+body,
+header,
+h1,
+main,
+main div,
+footer {
+    /* border: 1px solid black; */
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0;
+}
+
+.marker {
+    width: 200px;
+    height: 25px;
+    margin: 10px auto;
+}
+
+.sleeve {
+    width: 110px;
+    height: 25px;
+    border-left-width: 10px;
+    border-left-style: double;
+    border-left-color: rgba(0, 0, 0, 75%);
+    /*! black is default border color and shorthand for the 3 lines above is: border-left= 10px double black; */
+    /* background-color: white;
+    opacity: 50%; >> or use hsla() in the next line */
+    background-color: hsla(0, 0%, 100%, 50%);
+    /* or use: background-color: rgba(255, 255, 255, 0.5); */
+}
+
+.cap {
+    width: 60px;
+    height: 25px;
+}
+
+.cap,
+.sleeve {
+    display: inline-block;
+}
+
+.red {
+    background: linear-gradient(180deg, rgb(122, 74, 14) 0%, rgb(245, 62, 113) 50%, rgb(162, 27, 27) 100%);
+    /*! background: linear-gradient(90deg, rgb(255, 0, 0) 0%, rgb(0, 255, 0) 50%, rgb(0, 0, 255) 100%); */
+    /* "linear-gradient(gradientDirection, color1 color-stop, color2 color-stop, ...)" is a function that actually creates an image element - which the "background" property can accept as a value. */
+    box-shadow: -10px -10px 15px 2px red;
+    /*! box-shadow: offsetX offsetY (blurRadius - default=0) (spreadRadius - default=0) color; >> play with the values! */
+}
+
+.green {
+    background: linear-gradient(180deg, #55680D, #71F53E, #116C31);
+    /*! without color-stops specified, the "linear-gradient" function will distribute evenly the colors specified by us. Also, if no "gradientDirecion" is specified the "linear-gradient" function will consider 180deg (top to bottom) by default. */
+    /* 127 is half of 255 and thus when the green value is 127 - or half between green and black - and red and blue are both 0, we obtain a dark green - this is what the color named "green" is (255 is a light green) */
+    box-shadow: 0 0 20px 5px rgba(83, 14, 14, 0.8);
+}
+
+.blue {
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    box-shadow: 0 0 0 5px blue;
+}
+
+/*! Colors Legend: */
+.colors {
+
+    /*! non-colors */
+    color: rgb(0, 0, 0);
+    color: #000000;
+    color: hsl(0, 0%, 0%);
+    /* black */
+    color: rgb(255, 255, 255);
+    color: #FFFFFF;
+    color: hsl(0, 0%, 100%);
+    /* white */
+
+    /*! primary colors */
+    color: rgb(255, 0, 0);
+    color: #FF0000;
+    color: hsl(0, 100%, 50%);
+    /* red */
+    color: rgb(0, 255, 0);
+    color: #00FF00;
+    color: hsl(120, 100%, 50%);
+    /* green */
+    color: rgb(0, 0, 255);
+    color: #0000FF;
+    color: hsl(240, 100%, 50%);
+    /* blue */
+
+    /*! secondary colors */
+    color: rgb(0, 255, 255);
+    color: #00FFFF;
+    color: hsl(180, 100%, 50%);
+    /* cyan */
+    color: rgb(255, 0, 255);
+    color: #FF00FF;
+    color: hsl(300, 100%, 50%);
+    /* magenta */
+    color: rgb(255, 255, 0);
+    color: #FFFF00;
+    color: hsl(60, 100%, 50%);
+    /* yellow */
+
+    /*! tertiary colors */
+    color: rgb(0, 255, 127);
+    color: #00FF7F;
+    color: hsl(150, 100%, 50%);
+    /* spring green */
+    color: rgb(0, 127, 255);
+    color: #007FFF;
+    color: hsl(210, 100%, 50%);
+    /* azure */
+    color: rgb(255, 0, 127);
+    color: #FF007F;
+    color: hsl(330, 100%, 50%);
+    /* rose or bright pink */
+    color: rgb(127, 0, 255);
+    color: #7F00FF;
+    color: hsl(270, 100%, 50%);
+    /* violet */
+    color: rgb(255, 127, 0);
+    color: #FF7F00;
+    color: hsl(30, 100%, 50%);
+    /* orange */
+    color: rgb(127, 255, 0);
+    color: #7FFF00;
+    color: hsl(90, 100%, 50%);
+    /* chartreuse green */
+
+}

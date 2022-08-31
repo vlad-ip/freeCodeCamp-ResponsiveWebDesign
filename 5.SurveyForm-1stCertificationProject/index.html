@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+    <title>freeCodeCamp Survey Form</title>
+    <link href="css/styles.css"
+          rel="stylesheet" />
+</head>
+
+<body>
+
+    <header>
+        <h1 id="title">freeCodeCamp Survey&nbsp;Form</h1>
+        <p id="description">Thank you for your time spent&nbsp;taking&nbsp;our&nbsp;survey</p>
+    </header>
+
+    <main>
+        <form id="survey-form"
+              action="https://survey-form.freecodecamp.org">
+            <fieldset class="personal">
+                <label id="name-label">Name<input type="text"
+                           id="name"
+                           name="name"
+                           placeholder="Please enter your name"
+                           required /></label>
+                <label id="email-label">Email<input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="Please enter your email"
+                           required /></label>
+                <label id="number-label">Age<input type="number"
+                           id="number"
+                           name="age"
+                           min="18"
+                           max="65"
+                           placeholder="Please enter your age in years" /></label>
+                <label>Current Status<select id="dropdown"
+                            name="current-status">
+                        <option value="">Select Status</option>
+                        <option value="1">Student</option>
+                        <option value="2">Internship</option>
+                        <option value="3">Part Time Job</option>
+                        <option value="4">Full Time Job</option>
+                    </select></label>
+            </fieldset>
+            <fieldset class="recommend">
+                <div>
+                    <p>How likely are you to reommend us to&nbsp;a&nbsp;friend?</p>
+                    <label><input type="radio"
+                               class="radio"
+                               name="recommend"
+                               value="very-likely" /> Very Likely</label>
+                    <label><input type="radio"
+                               class="radio"
+                               name="recommend"
+                               value="likely" /> Likely</label>
+                    <label><input type="radio"
+                               class="radio"
+                               name="recommend"
+                               value="not-likely" /> Not Likely</label>
+                    <label><input type="radio"
+                               class="radio"
+                               name="recommend"
+                               value="highly-unlikely" /> Highly
+                        Unlikely</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="like">
+                <div>
+                    <p>What do you like about us? <span><i>(multiple&nbsp;options)</i></span></p>
+                    <div>
+                        <div>
+                            <input type="checkbox"
+                                   id="check1"
+                                   name="open-source-community"
+                                   value="like" />
+                            <label for="check1">Open Source Community</label>
+                        </div>
+                        <div>
+                            <input type="checkbox"
+                                   id="check2"
+                                   name="well-structured-curricullum"
+                                   value="like" />
+                            <label for="check2">Well Structured Curricullum</label>
+                        </div>
+                        <div>
+                            <input type="checkbox"
+                                   id="check3"
+                                   name="learning-by-projects"
+                                   value="like" />
+                            <label for="check3">Learning by Making Projects </label>
+                        </div>
+                        <div>
+                            <input type="checkbox"
+                                   id="check4"
+                                   name="bulding-real-skills"
+                                   value="like" />
+                            <label for="check4">Building Real Skills</label>
+                        </div>
+                        <div>
+                            <label for="textarea"
+                                   class="textarea">Aditional Comments&Sugestions</label>
+                            <textarea name="aditional-comments"
+                                      id="textarea"
+                                      rows="10"
+                                      placeholder="Please write here your comments and sugestions!"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <button type="submit"
+                    id="submit">Submit</button>
+
+        </form>
+    </main>
+
+    <footer></footer>
+
+</body>
+
+</html>

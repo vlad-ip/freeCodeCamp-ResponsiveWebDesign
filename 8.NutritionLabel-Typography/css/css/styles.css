@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.label {
+    border: 2px solid black;
+    width: 270px;
+    margin: 20px auto;
+    padding: 0 7px;
+    /*! made this class to apply format to the <div> that will contain the entire label */
+}
+
+header h1 {
+    text-align: center;
+    margin: -4px 10px;
+    /*! By choosing a "margin-inline" of 10px instead of 0px we obtain the <h1> text on 2 lines instead of one! */
+
+    letter-spacing: 0.15px;
+    /*! adjust the space between the characters of text to 0.15px */
+}
+
+p {
+    margin: 0;
+}
+
+.divider {
+    border-bottom: 1px solid #888989;
+    margin: 2px 0;
+    /*! similar to <hr> but much more customizable! */
+}
+
+.bold {
+    font-weight: 800;
+    /*! made this class to easily apply "bold" font-weight to different elements */
+}
+
+.right {
+    float: right;
+    /*! made this class for applying it in order to easily apply "float" to different elements */
+}
+
+.lg {
+    height: 10px;
+    /*! this class sets the height of the <div> used as a .lg thicknes divider */
+}
+
+.md {
+    height: 5px;
+    /*! this class sets the height of the <div> used as a .md thicknes divider */
+}
+
+.lg,
+.md {
+    background-color: black;
+    border: 0;
+    /*! .lg and .md dividers are not based anymore on "border-bottom: 1px solid;" line, but instead on their "background-color" and "height" >>> we need to eliminate the "border" previously set for .divider */
+}
+
+.clear-right {
+    clear: right;
+    /*! this is for the divider line that must move under "% Daily Value *" and continue the flow from that point. */
+}
+
+.sm-text {
+    font-size: 0.85rem;
+    /*! "rem" stands for "root em" (where "root" refers to <html>) */
+}
+
+.calories-info h1 {
+    margin: -5px -2px;
+    /*! here we diminished the top and bottom distances (margin) that are default to <h1> */
+
+    overflow: hidden;
+    /*! doesn't have much effect... only moves the div.divider.md a little more down, which is, however, unexpected. */
+}
+
+.calories-info span {
+    font-size: 1.2em;
+    margin-top: -7px;
+    /*! here with div>h1>span we increase the font in <span> and use "margin-top" of Negative Value to get the text inside <span> again in line with the <h1> text */
+}
+
+
+.indent {
+    margin-left: 1em;
+    /*! indent a <p> inside a <div> with "margin-left" */
+}
+
+.dbl-indent {
+    margin-left: 2em;
+}
+
+.daily-value p:not(.no-divider) {
+    border-bottom: 1px solid #888989;
+    /*! all <p> inside .daily-value will have a "border-bottom: 1px solid", BUT, by adding the pseudo-selector ":not()" after <p>, the <p class="no-divider"> will NOT get the "border-bottom" divider! That is beacause some "short" <p> means short "border-bottom" divider and we want to have only full length dividers in our label. We will add later <div class=divider"> for these situations of short <p>. */
+}
+
+.note {
+    font-size: 0.6rem;
+    margin: 5px 0;
+    padding: 0 8px;
+    text-indent: -8px;
+    /*! by using "text-indent" we indent the first linke of a text with a positive or negative value. In this case we wanted that the "*" to get outside the text line. */
+}

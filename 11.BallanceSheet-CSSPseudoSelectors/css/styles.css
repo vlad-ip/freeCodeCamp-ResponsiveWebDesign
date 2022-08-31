@@ -1,0 +1,194 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #0a0a23;
+}
+
+/*! any span whose Attribute "class" include "sr-only". You could use " " around sr-only or not. */
+span[class~="sr-only"] {
+    /* border: 0; */
+
+    /*! take out these elements of the Document Flow and make them Not Visible!!! */
+
+    /** Old school solution is:
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+
+    here we let the elements in place with "position: absolute;" witout specifying "top"/"left"/... but we take the elements out of the Document Flow!
+    Further, we give the elements "width" and "height" of 1px and set "overflow: hidden;" so that the elements are also NOT Visible (too small and No Overflow). 
+    
+    in the past, we could also use "clip":
+    clip: rect(1px, 1px, 1px, 1px);
+    >>> NOT needed anymore >>> "clip" is Deprecated! and replaced by "clip-path" */
+
+    clip-path: inset(50%);
+    /*! Now "clip" is deprecated and only "clip-path" is used! */
+    /* -webkit-clip-path: inset(50%); >>> also NOT needed >>> "clip-path" suffice */
+
+    position: absolute;
+    /*! we still need to use "position: absolute;" as "clip-path: inset(50%);" only make the elements Not Visible, but they remain in the Document Flow, and in order to get them out of it we need "position: absolute;" */
+}
+
+h1 {
+    max-width: 37.25rem;
+    margin: 0 auto;
+    padding: 1.5rem 1.25rem !important;
+    /*! this keyword ensures htat this property is alwasys applied, regardless of order and specificity. Usually its usage should be avoided. */
+}
+
+h1 .flex {
+    display: flex;
+    flex-direction: column-reverse;
+    /*! this displays the nested elements one over the other and in reverse order */
+
+    gap: 1rem;
+    /*! this will set a gap (space) between the nested elements */
+}
+
+h1 .flex span:first-of-type {
+    /*! the selector above refers to the first <span> in ".flex" as it is written in the HTML Document. It doesn't care that the elements are Reversed by CSS when Displaying the Page! */
+
+    font-size: 0.7em;
+}
+
+h1 .flex span:last-of-type {
+    font-size: 1.2em;
+}
+
+section {
+    max-width: 40rem;
+    margin: 0 auto;
+    border: 2px solid #d0d0d5;
+    /*! "max-width" set in "rem" for Responsive Design. */
+}
+
+#years {
+    display: flex;
+    justify-content: flex-end;
+
+    /*! A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). To make the element Sticky and Fix it to the Top of its container, do this: */
+    position: sticky;
+    top: 0;
+
+    color: #fff;
+    /* same as: #ffffff */
+    background: #0a0a23;
+
+    z-index: 999;
+    /*! ensure the element will not get covered by other elements by setting "z-index: 999;", in other words a very big stack order. */
+
+    margin: 0 -2px;
+    padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
+}
+
+#years span[class] {
+    font-weight: bold;
+
+    width: 4.5rem;
+    /*! with "width" set this way we put distance between the 3 year numbers. */
+
+    text-align: right;
+    /*! this aligns the text inside any of the 3 <span> to the right inside the <span> */
+}
+
+.table-wrap {
+    padding: 0 0.75rem 1.5rem 0.75rem;
+}
+
+span:not(.sr_only) {
+    font-weight: normal;
+    /* this apply to all <span> elements that don't have the class ".sr-only" */
+}
+
+table {
+    border-collapse: collapse;
+    /* border: 1px solid red; */
+    width: 100%;
+    position: relative;
+    margin-top: 3rem;
+}
+
+table caption {
+    color: #356eaf;
+    font-size: 1.3em;
+    font-weight: normal;
+    position: absolute;
+    top: -2.25rem;
+    left: 0.5rem;
+}
+
+table tbody td {
+    /* min-width: 4rem;
+    max-width: 4rem; */
+    width: 4rem;
+    /* border: 1px solid black; */
+}
+
+table tbody th {
+    width: calc(100% - 12rem);
+    /*! initially I have used:
+    width: 70%; and let the "tbody td" to share the rest of 30% */
+    /* border: 1px solid greenyellow; */
+}
+
+/*! "tr.total" is a more generic selector than the one below, because it allows "tr" to also have other classes than "total". The selector below refers strictly to "tr" elements that only have class "total" */
+tr[class="total"] {
+    border-bottom: 4px double #0a0a23;
+    font-weight: bold;
+}
+
+tr[class="total"] th {
+    text-align: left;
+    padding: 0.5rem 0 0.25rem 0.5rem;
+}
+
+tr.total td {
+    text-align: right;
+    padding: 0 0.25rem;
+}
+
+tr.total td:nth-of-type(3) {
+    padding: 0.5rem;
+}
+
+tr.total:hover {
+    background: #99c9ff;
+}
+
+td.current {
+    font-style: italic;
+}
+
+tr.data {
+    background-image: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem);
+}
+
+tr.data th {
+    text-align: left;
+    padding-top: 0.3rem;
+    padding-left: 0.5rem;
+}
+
+tr.data th .description {
+    display: block;
+    font-style: italic;
+    font-weight: normal;
+    padding: 1rem 0 0.75rem;
+    margin-right: -13.5rem;
+}
+
+tr.data td {
+    /*! use "vertical-align" to align the content of a cell in a table or an image in a line of text. It only applies to "inline", "inline-blocks" and table-cell elements - it cannot be used to align block-level elements. */
+    vertical-align: top;
+    text-align: right;
+    padding: 0.3rem 0.25rem 0;
+}
+
+tr.data td:last-of-type {
+    padding-right: 0.5rem;
+}

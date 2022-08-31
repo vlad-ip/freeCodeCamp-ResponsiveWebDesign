@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+          content="Technical Documentation Page: JavaScript Tutorial" />
+    <title>JavaScript Tutorial</title>
+    <link rel="stylesheet"
+          href="css/styles.css" />
+
+</head>
+
+<body>
+
+    <aside>
+
+        <nav id="navbar">
+
+            <!-- I do not want a <header> text to be displayed for the <navbar>, but as the <header> is a must and cannot be empty, I have choose to place the <a> inside it. Unusual, but it helps fit the requirements and my intended design in the same time. -->
+            <header>
+                <a href="#javascript_introduction"
+                   class="nav-link">JavaScript Introduction</a>
+                <a href="#javascript_programs"
+                   class="nav-link">JavaScript Programs</a>
+                <a href="#javascript_statements"
+                   class="nav-link">JavaScript Statements</a>
+                <a href="#javascript_code_blocks"
+                   class="nav-link">JavaScript Code Blocks</a>
+                <a href="#javascript_keywords"
+                   class="nav-link">JavaScript Keywords</a>
+            </header>
+
+        </nav>
+
+    </aside>
+
+    <div id="bg-mask"></div>
+
+    <a href="#"
+       id="link-to-top">
+        <header id="main-header">
+            <h1>JavaScript Tutorial</h1>
+        </header>
+    </a>
+
+    <main id="main-doc">
+
+        <section id="javascript_introduction"
+                 class="main-section">
+
+            <header>
+                <h2>JavaScript Introduction</h2>
+            </header>
+
+            <article id="what_is_javascript?"
+                     class="px-20">
+                <h3 class="mb-5">What is JavaScript and why study it?</h3>
+                <p class="mt-0 mb-5">Well, let's see some quick facts:</p>
+                <ul class="mt-0 ps-30">
+                    <li>JavaScript is the world's most popular programming language.</li>
+                    <li>JavaScript is the programming language of the Web.</li>
+                    <li>JavaScript is one of the <b>3 languages</b> all web developers must learn:
+                        <ol class="ps-30">
+                            <li><b>HTML</b> to define the content of web pages</li>
+                            <li><b>CSS</b> to specify the layout of web pages</li>
+                            <li><b>JavaScript</b> to program the behavior of web pages</li>
+                        </ol>
+                    </li>
+                </ul>
+            </article>
+
+            <article id="what_can_javascript_do?"
+                     class="px-20">
+                <h3 class="mb-5">What can JavaScript do?</h3>
+                <p class="mt-0 mb-5">Pretty much, among which some of the things below:</p>
+                <ol class="mt-0 ps-30">
+                    <li>JavaScript can change <i><b>HTML content</b></i></li>
+                    <li>JavaScript can change <i><b>HTML Attribute Values</b></i></li>
+                    <li>JavaScript can change <i><b>HTML Styles (CSS)</b></i></li>
+                    <li>JavaScript can hide <i><b>HTML Elements</b></i></li>
+                    <li>JavaScript can show <i><b>HTML Elements</b></i></li>
+                </ol>
+            </article>
+
+        </section>
+
+        <section id="javascript_programs"
+                 class="main-section">
+
+            <header>
+                <h2>JavaScript Programs</h2>
+            </header>
+
+            <article>
+                <p class="px-20 mb-0">
+                    A computer program is a list of <i><b>instructions</b></i> to be <i><b>executed</b></i> by a
+                    computer.</p>
+                <p class="px-20 mb-0 mt-0">In a programming language, these programming instructions are called
+                    <i><b>statements</b></i>.
+                </p>
+                <p class="px-20 mb-0 mt-0">A JavaScript program is thus a list of programming statements.</p>
+                <p class="px-20 mt-0">JavaScript programs are executed by the web browser.
+                </p>
+            </article>
+
+        </section>
+
+        <section id="javascript_statements"
+                 class="main-section">
+
+            <header>
+                <h2>JavaScript Statements</h2>
+            </header>
+
+            <p class="px-20 mb-0">
+                JavaScript programs (and thus, JavaScript statements) are often called JavaScript
+                <i><b>code</b></i>.
+            </p>
+            <p class="px-20 mt-0">
+                The code is executed statement by statement, in the same order as they are written.
+            </p>
+
+            <article id="javascript_statements_composition"
+                     class="px-20">
+                <h3 class="mb-5">
+                    JavaScript statements are composed of:</h3>
+                <ul class="mt-0 ps-30">
+                    <li><i>Values</i></li>
+                    <li><i>Operators</i></li>
+                    <li><i>Expressions</i></li>
+                    <li><i>Keywords</i></li>
+                    <li><i>Comments</i></li>
+                </ul>
+            </article>
+
+            <article id="use_of_semicolons"
+                     class=" px-20">
+                <h3 class="mb-5">Use of Semicolons</h3>
+                <p class="mt-0 mb-0">JavaScript use semicolons in order to separate statements.</p>
+                <p class="mt-0 mb-0">This is not
+                    mandatory, but
+                    it's Good Practice
+                    to
+                    place a semicolon at the end of each statement.
+                    <span class="mt-5">Example:</span>
+                </p>
+                <code>let a, b, c; // Declare 3 variables
+                a = 5; // Assign the value 5 to a
+                b = 6; // Assign the value 6 to b
+                c = a + b; // Assign the sum of a and b to c
+                </code>
+                <p class="mt-0 mb-0">When separated by semicolons, multiple statements on one line are allowed.
+                    <span class="mt-5">Example:</span>
+                </p>
+                <code>a = 5; b = 6; c = a + b;</code>
+            </article>
+
+            <article id="use_of_white_space"
+                     class=" px-20">
+                <h3 class="mb-5">Use of White Space</h3>
+                <p class="mt-0 mb-0">JavaScript ignores multiple spaces. You can add white space to your script to make
+                    it more readable.</p>
+                <p class="mt-0 mb-0">Thus, the following two statements are equivalent.
+                    <span class="mt-5">Example:</span>
+                </p>
+                <code>let person = "Hege";
+                let person="Hege";
+                </code>
+                <p class="mt-0 mb-0">A good practice is to put spaces around operators ( = + - / )
+                    <span class="mt-5">Example:</span>
+                </p>
+                <code>let x = y + z;</code>
+            </article>
+
+            <article id="line_length_&_line_breaks"
+                     class=" px-20">
+                <h3 class="mb-5">Line Length & Line Breaks</h3>
+                <p class="mt-0 mb-0">For best readability, programmers often like to avoid code lines longer than 80
+                    characters.
+                </p>
+                <p class="mt-0 mb-0">If a JavaScript statement does not fit on one line, the best place to break it is
+                    after an operator.
+                    <span class="mt-5">Example:</span>
+                </p>
+                <code>document.getElementById<wbr>("demo")<wbr>.innerHTML = "Hello Dolly!";
+                </code>
+            </article>
+
+        </section>
+
+        <section id="javascript_code_blocks"
+                 class="main-section">
+
+            <header>
+                <h2>JavaScript Code Blocks</h2>
+            </header>
+
+            <article class="px-20">
+                <p class="mt-0 mb-0">
+                    JavaScript statements can be grouped together in code blocks, inside curly brackets {...}.</p>
+                <p class="mt-0 mb-0">The purpose of code blocks is to define statements to be executed together.</p>
+                <p class="mt-0 mb-0">One place you will find statements grouped together in blocks, is in JavaScript
+                    functions.<span class="mt-5">Example:</span>
+                </p>
+                <code>function myFunction() {
+                document.getElementById<wbr>("demo1")<wbr>.innerHTML = "Hello Dolly!";
+                document.getElementById<wbr>("demo2")<wbr>.innerHTML = "How are you?";
+                }
+                </code>
+            </article>
+
+        </section>
+
+        <section id="javascript_keywords"
+                 class="main-section">
+
+            <header>
+                <h2>JavaScript Keywords</h2>
+            </header>
+
+            <p class="px-20 mb-0">
+                JavaScript statements often start with a keyword to identify the JavaScript action to be
+                performed.</p>
+            <p class="px-20 mt-0 mb-5">JavaScript keywords are reserved words. Reserved words cannot be used as names
+                for
+                variables.<span class="mt-5">Example:</span>
+            </p>
+
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Keyword</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><i>var</i></td>
+                            <td>Declares a variable</td>
+                        </tr>
+                        <tr>
+                            <td><i>let</i></td>
+                            <td>Declares a block variable</td>
+                        </tr>
+                        <tr>
+                            <td><i>const</i></td>
+                            <td>Declares a block constant</td>
+                        </tr>
+                        <tr>
+                            <td><i>if</i></td>
+                            <td>Marks a block of statements to be executed on a condition</td>
+                        </tr>
+                        <tr>
+                            <td><i>switch</i></td>
+                            <td>Marks a block of statements to be executed in different cases</td>
+                        </tr>
+                        <tr>
+                            <td><i>for</i></td>
+                            <td>Marks a block of statements to be executed in a loop</td>
+                        </tr>
+                        <tr>
+                            <td><i>function</i></td>
+                            <td>Declares a function</td>
+                        </tr>
+                        <tr>
+                            <td><i>return</i></td>
+                            <td>Exits a function</td>
+                        </tr>
+                        <tr>
+                            <td><i>try</i></td>
+                            <td>Implements error handling to a block of statements</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <h2>Reference</h2>
+        <p class="px-20">All the information in this page was taken from <a href="https://www.w3schools.com"
+               title="W3Schools">www.w3schools.com</a></p>
+
+    </footer>
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

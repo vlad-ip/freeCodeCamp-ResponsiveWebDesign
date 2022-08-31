@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #EBE7E7;
+    /*! By using "background" when setting "background-color" you'll set the other background properties to their initial values! */
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+    background: #E0DDDD;
+}
+
+#gallery img {
+    width: 25%;
+    height: 300px;
+    object-fit: cover;
+    /*! "object-fit: cover;" tells the image to fill the img container while maintaining the aspect ratio, resulting in cropping to fit. */
+    margin-top: 8px;
+    padding: 0 4px;
+    border-radius: 10px;
+}
+
+#gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4px;
+}
+
+@media (max-width: 800px) {
+
+    #gallery img {
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    #gallery img {
+        width: 100%;
+    }
+}
